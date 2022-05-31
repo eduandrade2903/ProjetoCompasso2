@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>team project</title>
-    <link rel="stylesheet" href="src/styles/stye-screen/style.css">
+    <link rel="stylesheet" href="src/styles/stye-screen/desktop-style/style.css">
+    <link rel="stylesheet" href="src/styles/stye-screen/responsive.style/responsive.css">
 </head>
 <body>
     <section class="page" id="basic-page">
@@ -159,8 +160,8 @@
                         <label for="check-terms">I accept the terms and privacy</label>
                     </div>
 
-                    <input class="next-container">
-                        <input type="submit" value="" id="next-button">Next</input>
+                    <div class="next-container">
+                        <input type="submit" value="Next" id="next-button">
                     </div>
                 </div>
             </form>
@@ -175,7 +176,39 @@
 
 
     <section>
-
+        <section class="page" id="social-page">
+            <header>
+                <div class="title">
+                    <h2>
+                        Team Sign Up
+                    </h2>
+                </div>
+    
+                <nav class="nav-bar" id="nav-bar-page2">
+                    <ul>
+                        <li class="item">Basic</li>
+                        <li class="item">Social</li>
+                        <li class="item">Certificates</li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <main>
+                <form action="" id="form-social-page">
+                    <div class="user-info-container">
+                        <label for="input-linkedin">LinkeDIn</label>
+                        <input type="text" name="linkedin" id="input-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+    
+                        <label for="input-github">Github*</label>
+                        <input type="text" name="github" id="input-github" placeholder="https://github.com/foobar">
+                    </div>
+    
+                    <div class="next-container">
+                        <input type="submit" value="Next" id="next-button">
+                    </div>
+                </form>
+            </main>
+        </section>
     </section>
 
 
