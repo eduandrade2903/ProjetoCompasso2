@@ -1,7 +1,131 @@
 @import '../../../abstract/global';
 
-#basic-page{
+body{
     width: 100vw;
-    height: 100vw;
-    padding: 45px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    #basic-page{
+        background-color: rgb(164, 206, 255);
+        max-width: 620px;
+        padding: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 35px;
+
+        header{
+            width: 100%;
+
+            .title{
+                font-family: $title-font;
+                font-size: 1.8rem;
+                font-weight: 600;
+                margin-bottom: 33px;
+            }
+
+            ul{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+
+                li{
+                    font-size: 1.6rem;
+                    line-height: 18px;
+                    font-weight: 400;
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 44px;
+                    color: $primary-color;
+                    border-bottom: 2px solid #aaaaaa;
+
+                    &:first-child{
+                        border-bottom: 3px solid $primary-color;
+                        border-bottom-right-radius: 1px;
+                        border-bottom-left-radius: 1px;
+                    }
+                }
+            }
+        }
+
+        #form-basic-page{
+            display: flex;
+            flex-direction: column;
+            row-gap: 35px;
+
+            .user-info-container{
+                display: flex;
+                flex-wrap: wrap;
+
+                label, input{
+                    flex: 1 1 100%;
+                }
+
+                label{
+                    font-size: 1.4rem;
+                    line-height: 16px;
+                    color: #767676;
+                }
+
+                input{
+                    padding: 11px 12px;
+                    border: 2px solid #aaaaaa;
+                    border-radius: 4px;
+                    font-size: 1.6rem;
+                    line-height: 18px;
+
+                    &:not(.denial){
+                        margin-bottom: 35px;
+                    }
+
+                    &::placeholder{
+                        color: #767676;
+                        width: 90%;
+                    }
+                }
+
+                .horizontal-inputs{
+                    display: flex;
+                    flex: 1;
+                    column-gap: 24px;
+
+                    .email-container{
+                        display: flex;
+                        flex-direction: column;
+                        flex: 1 1 75%;
+                    }
+
+                    .phone-container{
+                        display: flex;
+                        flex-direction: column;
+                        flex: 1 1 25%;
+                    }
+                }
+
+                .input-error{
+                    border-color: #ff0221;
+                    color: #ff0221;
+
+                    &:focus{
+                        color: #767676;
+                        outline: #ff0221;
+                    }
+                }
+
+                .input-error::after{
+                    content: "aaa";
+                    font-size: 18px;
+                    width: 10px;
+                    height: 10px;
+                }
+
+            }
+        }
+    }
 }
+

@@ -1,7 +1,7 @@
 @import 'variables';
 
 html{
-    font-family: $fonte-principal;
+    font-family: $primary-font;
     font-size: 62.5%;
 }
 
@@ -15,5 +15,5 @@ h2, p, nav, ul, li, label{
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
