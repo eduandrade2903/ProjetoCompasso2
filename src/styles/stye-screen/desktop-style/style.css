@@ -1,1 +1,57 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+}
+
+h2, p, nav, ul, li, label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#basic-page {
+  width: 100vw;
+  height: 100vw;
+  padding: 45px;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+}
+
+h2, p, nav, ul, li, label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+}
+
+h2, p, nav, ul, li, label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

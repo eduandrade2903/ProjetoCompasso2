@@ -1,11 +1,11 @@
 @import 'variables';
 
 html{
-    font-family: $fonte;
+    font-family: $fonte-principal;
     font-size: 62.5%;
 }
 
-img, h1, p{
+h2, p, nav, ul, li, label{
     -webkit-touch-callout: none; 
     -webkit-user-select: none;
     -khtml-user-select: none;     
