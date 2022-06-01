@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>team project</title>
+    <link rel="stylesheet" href="src/styles/abstract/reset.css">
     <link rel="stylesheet" href="src/styles/stye-screen/desktop-style/style.css">
     <link rel="stylesheet" href="src/styles/stye-screen/responsive.style/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="page" id="basic-page">
@@ -29,13 +33,13 @@
         <main>
             <form action="" id="form-basic-page">
                 <div class="user-info-container">
-                    <label for="input-name">Full name*</label>
+                    <label for="input-name">Full name *</label>
                     <input type="text" name="full-name" id="input-name" placeholder="Foo Bar">
 
                     <label for="input-nickname">Nickname</label>
                     <input type="text" name="nickname" id="input-nickname" placeholder="Juanito">
                     
-                    <label for="input-email">Email*</label>
+                    <label for="input-email">Email *</label>
                     <input type="email" name="email" id="input-email" placeholder="foo@bar.com">
 
                     <label for="input-tel"></label>
@@ -170,42 +174,14 @@
             </form>
         </main>
     </section>
-    <section>
-        <section class="page" id="social-page">
-            <header>
-                <div class="title">
-                    <h2>
-                        Team Sign Up
-                    </h2>
-                </div>
-    
-                <nav class="nav-bar" id="nav-bar-page2">
-                    <ul>
-                        <li class="item">Basic</li>
-                        <li class="item">Social</li>
-                        <li class="item">Certificates</li>
-                    </ul>
-                </nav>
-            </header>
-    
-            <main>
-                <form action="" id="form-social-page">
-                    <div class="user-info-container">
-                        <label for="input-linkedin">LinkeDIn</label>
-                        <input type="text" name="linkedin" id="input-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-    
-                        <label for="input-github">Github*</label>
-                        <input type="text" name="github" id="input-github" placeholder="https://github.com/foobar">
-                    </div>
-    
-                    <div class="next-container">
-                        <input type="submit" value="Next" id="next-button">
-                    </div>
-                </form>
-            </main>
-        </section>
-    </section>
-    <section>
+
+
+
+
+
+
+
+    <section class="page" id="social-page">
         <header>
             <div class="title">
                 <h2>
@@ -213,7 +189,7 @@
                 </h2>
             </div>
 
-            <nav class="nav-bar" id="nav-bar-page1">
+            <nav class="nav-bar" id="nav-bar-page2">
                 <ul>
                     <li class="item">Basic</li>
                     <li class="item">Social</li>
@@ -221,6 +197,118 @@
                 </ul>
             </nav>
         </header>
+
+        <main>
+            <form action="" id="form-social-page">
+                <div class="user-info-container">
+                    <label for="input-linkedin">LinkeDIn</label>
+                    <input type="text" name="linkedin" id="input-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+
+                    <label for="input-github">Github*</label>
+                    <input type="text" name="github" id="input-github" placeholder="https://github.com/foobar">
+                </div>
+
+                <div class="finish-container">
+                    <input type="submit" value="Finish" id="Finish-button">
+                </div>
+            </form>
+        </main>
     </section>
+    
+
+
+
+
+
+
+    <section class="page" id="certificates-page">
+        <header>
+            <div class="title">
+                <h2>
+                    Team Sign Up
+                </h2>
+            </div>
+
+            <nav class="nav-bar" id="nav-bar-page3">
+                <ul>
+                    <li class="item">Basic</li>
+                    <li class="item">Social</li>
+                    <li class="item">Certificates</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form action="" id="form-certificate-page">
+                <div class="user-info-container">
+                    <div class="certificates-container">
+                        <label for="input-certificates">Certificates</label>
+                        <input type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                        <i class="fa-regular fa-heart" id="regular-heart-icon"></i>
+                        <i class="fa-solid fa-heart" id="solid-heart-icon"></i>
+
+                        <div class="more-container">
+                            <button id="more-certificate-btn">
+                                <i class="fa-solid fa-plus"></i>
+                                <span>More</span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+         
+                    <div class="bottom-container">
+                        <label for="input-team-name">Team Name *</label>
+                        <input type="text" name="team-name" id="input-team-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                        
+                        <label for="input-institution">Institution *</label>
+                        <input type="text" name="institution" id="input-institution" placeholder="Universidade Federal da Paraíba">
+
+                        <label for="input-graduation">Graduation *</label>
+                        <input type="text" name="graduation" id="input-graduation" placeholder="Ciências da Computação">
+                    </div>
+                </div>
+
+                <div class="next-container">
+                    <a href="user-results.index.html" id="finish-button">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Finish</span>
+                    </a>
+                </div>
+            </form>
+        </main>
+    </section>
+
+
+
+
+    <!-- Script local -->
+
+    <script>
+        var page1 = false;
+        var page2 = true;
+        var page3 = true;
+
+        if (page1 == true){
+            let sectionBasic = document.querySelector('#basic-page');
+            sectionBasic.classList.add('hidden')
+        }
+
+        if (page2 == true){
+            let sectionSocial = document.querySelector('#social-page');
+            sectionSocial.classList.add('hidden')
+        }
+
+        if (page3 == true){
+            let sectionCertificates = document.querySelector('#certificates-page');
+            sectionCertificates.classList.add('hidden')
+        }
+
+    </script>
+
+
+    <!-- Scripts com link-->
+
+
+    <script src="https://kit.fontawesome.com/5d2396c788.js" crossorigin="anonymous"></script>
 </body>
 </html>
