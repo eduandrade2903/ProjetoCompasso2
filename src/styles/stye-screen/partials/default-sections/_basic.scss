@@ -1,25 +1,28 @@
 @import '../../../abstract/global';
 
-body{
+.page{
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center; 
 
-    #basic-page{
-        background-color: rgb(164, 206, 255);
-        max-width: 620px;
-        padding: 45px;
+    .content{
+        // background-color: rgb(164, 206, 255);
+        width: 620px;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         row-gap: 35px;
+        padding: 45px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 20px;
 
         header{
             width: 100%;
-
+            
             .title{
                 font-family: $title-font;
                 font-size: 1.8rem;
@@ -61,6 +64,7 @@ body{
             .user-info-container{
                 display: flex;
                 flex-wrap: wrap;
+                position: relative;
 
                 label, input{
                     flex: 1 1 100%;
@@ -79,14 +83,17 @@ body{
                     font-size: 1.6rem;
                     line-height: 18px;
 
-                    &:not(.denial){
-                        margin-bottom: 35px;
-                    }
-
                     &::placeholder{
                         color: #767676;
                         width: 90%;
                     }
+                }
+
+                .name-container, .nickname-container{
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1 1 100%;
+                    margin-bottom: 35px;
                 }
 
                 .horizontal-inputs{
@@ -107,22 +114,47 @@ body{
                     }
                 }
 
+                // ------------informações de erro--------------
+
                 .input-error{
                     border-color: #ff0221;
-                    color: #ff0221;
-
+                    
                     &:focus{
-                        color: #767676;
                         outline: #ff0221;
                     }
                 }
 
-                .input-error::after{
-                    content: "aaa";
-                    font-size: 18px;
-                    width: 10px;
-                    height: 10px;
+                i{
+                    visibility: hidden;
+                    position: relative;
+                    left: 500px;
+                    bottom: 32px;   
                 }
+
+                .icon-error{
+                    visibility: visible;
+                }
+
+                .exception-email{
+                    left: 254px;
+                }
+
+                .exception-phone{
+                    left: 192px;
+                }
+
+                span{
+                    visibility: hidden;
+                    font-size: 1.4rem;
+                    position: relative;
+                    margin-top: -23px;
+                }
+
+                .message-error{
+                    visibility: visible;
+                    color: #ff0221;
+                }
+
 
             }
         }

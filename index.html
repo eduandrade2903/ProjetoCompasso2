@@ -11,180 +11,179 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
     <section class="page" id="basic-page">
-        <header>
-            <div class="title">
-                <h2>
-                    Team Sign Up
-                </h2>
-            </div>
-
-            <nav class="nav-bar" id="nav-bar-page1">
-                <ul>
-                    <li class="item">Basic</li>
-                    <li class="item">Social</li>
-                    <li class="item">Certificates</li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <form action="" id="form-basic-page">
-                <div class="user-info-container">
-                    <label for="input-name">Full name *</label>
-                    <input type="text" name="full-name" id="input-name" placeholder="Foo Bar">
-                    <div class="name-error"></div>
-
-                    <label for="input-nickname">Nickname</label>
-                    <input type="text" name="nickname" id="input-nickname" placeholder="Juanito">
-                    <div class="name-error"></div>
-
-                    <div class="horizontal-inputs">
-                        <div class="email-container">
-                            <label for="input-email">Email *</label>
-                            <input type="email" name="email" id="input-email" placeholder="foo@bar.com" class="denial">
-                            <div class="name-error"></div>
-                        </div>
-
-                        <div class="phone-container">
-                            <label for="input-tel">Phone</label>
-                            <input type="tel" name="telephone" id="input-tel" placeholder="(83) 00000-0000" class="denial">
-                            <div class="name-error"></div>
-                        </div>
-                    </div>
+        <div class="content">
+            <header>
+                <div class="title">
+                    <h2>
+                        Team Sign Up
+                    </h2>
                 </div>
-
-                <div class="user-birthday-container">
-
-                    <h3>Birthday *</h3>
-
-                    <div class="date-birthday">
-
-                        <div class="day">
-                            <label for="selection-days">Day</label>
-                            <select name="days" id="selection-days">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                            </select>
+                <nav class="nav-bar" id="nav-bar-page1">
+                    <ul>
+                        <li class="item">Basic</li>
+                        <li class="item">Social</li>
+                        <li class="item">Certificates</li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <form action="" id="form-basic-page">
+                    <div class="user-info-container">
+                        <div class="name-container">
+                            <label for="input-name">Full name *</label>
+                            <input class="input-error" type="text" name="full-name" id="input-name" placeholder="Foo Bar">
+            
+                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-name">teste de mensagem de erro</span>
                         </div>
-
-                        <div class="month">
-                            <label for="selection-months">Month</label>
-                            <select name="months" id="selection-months">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                            </select>
+                        <div class="nickname-container">
+                            <label for="input-nickname">Nickname</label>
+                            <input type="text" name="nickname" id="input-nickname" placeholder="Juanito">
+                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-nickname">teste de mensagem de erro</span>
                         </div>
-
-                        <div class="year">
-                            <label for="slection-years">Year</label>
-                            <select name="years" id="selection-years">
-                                <option value="1970">1970</option>
-                                <option value="1971">1971</option>
-                                <option value="1972">1972</option>
-                                <option value="1973">1973</option>
-                                <option value="1974">1974</option>
-                                <option value="1975">1975</option>
-                                <option value="1976">1976</option>
-                                <option value="1977">1977</option>
-                                <option value="1978">1978</option>
-                                <option value="1979">1979</option>
-                                <option value="1980">1980</option>
-                                <option value="1981">1981</option>
-                                <option value="1982">1982</option>
-                                <option value="1983">1983</option>
-                                <option value="1984">1984</option>
-                                <option value="1985">1985</option>
-                                <option value="1986">1986</option>
-                                <option value="1987">1987</option>
-                                <option value="1988">1988</option>
-                                <option value="1989">1989</option>
-                                <option value="1990">1990</option>
-                                <option value="1991">1991</option>
-                                <option value="1992">1992</option>
-                                <option value="1993">1993</option>
-                                <option value="1994">1994</option>
-                                <option value="1995">1995</option>
-                                <option value="1996">1996</option>
-                                <option value="1997">1997</option>
-                                <option value="1998">1998</option>
-                                <option value="1999">1999</option>
-                                <option value="2000">2000</option>
-                                <option value="2001">2001</option>
-                                <option value="2002">2002</option>
-                                <option value="2003">2003</option>
-                                <option value="2004">2004</option>
-                                <option value="2005">2005</option>
-                                <option value="2006">2006</option>
-                                <option value="2007">2007</option>
-                                <option value="2008">2008</option>
-                                <option value="2009">2009</option>
-                                <option value="2010">2010</option>
-                            </select>
-                        </div>
-
-                        <div class="age">
-                            <p class="age-result"></p>
+                        <div class="horizontal-inputs">
+                            <div class="email-container">
+                                <label for="input-email">Email *</label>
+                                <input type="email" name="email" id="input-email" placeholder="foo@bar.com" class="denial">
+                                <i class="icon-error exception-email"><img src="src/icons/error-icon.svg" alt=""></i>
+                                <span class="message-error" id="email-error">teste de mensagem de erro</span>
+                            </div>
+                            <div class="phone-container">
+                                <label for="input-tel">Phone</label>
+                                <input type="tel" name="telephone" id="input-tel" placeholder="(83) 00000-0000" class="denial">
+                                <i class="icon-error exception-phone"><img src="src/icons/error-icon.svg" alt=""></i>
+                                <span class="message-error" id="phone-error">teste de mensagem de erro</span>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="terms-container">
-                        <input type="checkbox" name="terms" id="check-terms">
-                        <label for="check-terms">
-                            <p>I accept the <a href="#">terms and privacy</a></p>
-                        </label>
+                    <div class="user-birthday-container">
+                        <h3>Birthday *</h3>
+                        <div class="date-birthday">
+                            <div class="day">
+                                <label for="selection-days">Day</label>
+                                <select name="days" id="selection-days">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </div>
+                            <div class="month">
+                                <label for="selection-months">Month</label>
+                                <select name="months" id="selection-months">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="year">
+                                <label for="slection-years">Year</label>
+                                <select name="years" id="selection-years">
+                                    <option value="1970">1970</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                </select>
+                            </div>
+                            <div class="age">
+                                <p class="age-result"></p>
+                            </div>
+                        </div>
+                        <div class="terms-container">
+                            <input type="checkbox" name="terms" id="check-terms">
+                            <label for="check-terms">
+                                <p>I accept the <a href="#">terms and privacy</a></p>
+                            </label>
+                        </div>
+                        <div class="next-container">
+                            <button id="next-button">
+                                <span>Next</span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
                     </div>
-
-                    <div class="next-container">
-                        <button id="next-button">
-                            <span>Next</span>
-                            <i class="fa-solid fa-angle-right"></i>
-                        </button>
-                    </div> 
-                </div>
-            </form>
-        </main>
+                </form>
+            </main>
+        </div>
     </section>
 
 
@@ -212,15 +211,23 @@
 
         <main>
             <form action="" id="form-social-page">
-                <div class="user-info-container">
-                    <label for="input-linkedin">LinkeDIn</label>
-                    <input type="text" name="linkedin" id="input-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                    <div class="name-error"></div>
+                <div class="user-social-container">
+                    <div class="linkedin-container">
+                        <label for="input-linkedin">LinkeDIn</label>
+                        <input type="text" name="linkedin" id="input-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                        
+                        <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                        <span class="message-error" id="error-linkedin">teste de mensagem de erro</span>
+                    </div>
 
 
-                    <label for="input-github">Github*</label>
-                    <input type="text" name="github" id="input-github" placeholder="https://github.com/foobar">
-                    <div class="name-error"></div>
+                    <div class="github-container">
+                        <label for="input-github">Github*</label>
+                        <input type="text" name="github" id="input-github" placeholder="https://github.com/foobar">
+                        
+                        <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                        <span class="message-error" id="error-github">teste de mensagem de erro</span>
+                    </div>
                 </div>
 
                 <div class="finish-container">
@@ -262,7 +269,10 @@
                     <div class="certificates-container">
                         <label for="input-certificates">Certificates</label>
                         <input type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                        <div class="name-error"></div>
+                        
+                        <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                        <span class="message-error" id="error-name">teste de mensagem de erro</span>
+
                         <i class="fa-regular fa-heart" id="regular-heart-icon"></i>
                         <i class="fa-solid fa-heart" id="solid-heart-icon"></i>
 
@@ -278,16 +288,16 @@
                     <div class="bottom-container">
                         <label for="input-team-name">Team Name *</label>
                         <input type="text" name="team-name" id="input-team-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                        <div class="name-error"></div>
+                        <span class="name-error"></span>
 
 
                         <label for="input-institution">Institution *</label>
                         <input type="text" name="institution" id="input-institution" placeholder="Universidade Federal da Paraíba">
-                        <div class="name-error"></div>
+                        <span class="name-error"></span>
 
                         <label for="input-graduation">Graduation *</label>
                         <input type="text" name="graduation" id="input-graduation" placeholder="Ciências da Computação">
-                        <div class="name-error"></div>
+                        <span class="name-error"></span>
                     </div>
                 </div>
 
