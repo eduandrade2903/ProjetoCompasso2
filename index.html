@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
 
@@ -168,12 +168,14 @@
                                 <p class="age-result"></p>
                             </div>
                         </div>
+
                         <div class="terms-container">
                             <input type="checkbox" name="terms" id="check-terms">
                             <label for="check-terms">
                                 <p>I accept the <a href="#">terms and privacy</a></p>
                             </label>
                         </div>
+                        
                         <div class="next-container">
                             <button id="next-button">
                                 <span>Next</span>
@@ -271,10 +273,12 @@
                         <input type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
                         
                         <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                        <span class="message-error" id="error-name">teste de mensagem de erro</span>
+                        <span class="message-error" id="error-certificate">teste de mensagem de erro</span>
 
                         <i class="fa-regular fa-heart" id="regular-heart-icon"></i>
                         <i class="fa-solid fa-heart" id="solid-heart-icon"></i>
+
+                        <div class="certificate-limiter"></div>
 
                         <div class="more-container">
                             <button id="more-certificate-btn">
@@ -286,25 +290,39 @@
                     </div>
          
                     <div class="bottom-container">
-                        <label for="input-team-name">Team Name *</label>
-                        <input type="text" name="team-name" id="input-team-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                        <span class="name-error"></span>
+                        <div class="team-name-container">
+                            <label for="input-team-name">Team Name *</label>
+                            <input type="text" name="team-name" id="input-team-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                            
+                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-team-name">teste de mensagem de erro</span>
+                        </div>
 
 
-                        <label for="input-institution">Institution *</label>
-                        <input type="text" name="institution" id="input-institution" placeholder="Universidade Federal da Paraíba">
-                        <span class="name-error"></span>
+                        <div class="institution-container">
+                            <label for="input-institution">Institution *</label>
+                            <input type="text" name="institution" id="input-institution" placeholder="Universidade Federal da Paraíba">
 
-                        <label for="input-graduation">Graduation *</label>
-                        <input type="text" name="graduation" id="input-graduation" placeholder="Ciências da Computação">
-                        <span class="name-error"></span>
+                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-institution">teste de mensagem de erro</span>
+                        </div>
+
+                        <div class="gaduation-container">
+                            <label for="input-graduation">Graduation *</label>
+                            <input type="text" name="graduation" id="input-graduation" placeholder="Ciências da Computação">
+
+                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-graduation">teste de mensagem de erro</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="next-container">
+                <div class="finish-container">
                     <a href="user-results.index.html" id="finish-button">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Finish</span>
+                        <button id="finish-button">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Finish</span>
+                        </button>
                     </a>
                 </div>
             </form>

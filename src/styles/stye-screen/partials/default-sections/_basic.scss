@@ -2,15 +2,16 @@
 
 .page{
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    padding: 45px;
+
 
     .content{
         // background-color: rgb(164, 206, 255);
-        width: 620px;
-        height: auto;
+        max-width: 620px;
+        height: 790px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -34,6 +35,7 @@
                 display: flex;
                 width: 100%;
                 justify-content: center;
+                padding-left: unset;
 
                 li{
                     font-size: 1.6rem;
@@ -74,6 +76,7 @@
                     font-size: 1.4rem;
                     line-height: 16px;
                     color: #767676;
+                    margin-bottom: 4px;
                 }
 
                 input{
@@ -110,7 +113,7 @@
                     .phone-container{
                         display: flex;
                         flex-direction: column;
-                        flex: 1 1 25%;
+                        flex: 1 2 75%;
                     }
                 }
 
@@ -136,11 +139,11 @@
                 }
 
                 .exception-email{
-                    left: 254px;
+                    left: 268px;
                 }
 
                 .exception-phone{
-                    left: 192px;
+                    left: 180px;
                 }
 
                 span{
@@ -155,6 +158,37 @@
                     color: #ff0221;
                 }
 
+
+            }
+
+            .user-birthday-container{
+                display: flex;
+                flex-direction: column;
+                
+                h3{
+                    font-size: 1.8rem;
+                    color: #767676;
+                    margin-bottom: 14px;
+                }
+
+                .date-birthday{
+                    display: flex;
+                    flex: 1 1 100%;
+                    margin-bottom: 45px;
+                }
+
+                .terms-container{
+                    margin-bottom: 52px;
+                    input{
+
+                    }
+                }
+
+                .next-container{
+                    display: flex;
+                    flex: 1 1 100%;
+                    justify-content: end;
+                }
 
             }
         }

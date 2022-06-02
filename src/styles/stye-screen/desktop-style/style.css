@@ -19,7 +19,6 @@ h2, p, nav, ul, li, label {
 
 .page {
   width: 100vw;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,11 +28,12 @@ h2, p, nav, ul, li, label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 45px;
 }
 
 .page .content {
-  width: 620px;
-  height: auto;
+  max-width: 620px;
+  height: 790px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,6 +73,7 @@ h2, p, nav, ul, li, label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: unset;
 }
 
 .page .content header ul li {
@@ -132,6 +133,7 @@ h2, p, nav, ul, li, label {
   font-size: 1.4rem;
   line-height: 16px;
   color: #767676;
+  margin-bottom: 4px;
 }
 
 .page .content #form-basic-page .user-info-container input {
@@ -209,8 +211,8 @@ h2, p, nav, ul, li, label {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
+      -ms-flex: 1 2 75%;
+          flex: 1 2 75%;
 }
 
 .page .content #form-basic-page .user-info-container .input-error {
@@ -233,11 +235,11 @@ h2, p, nav, ul, li, label {
 }
 
 .page .content #form-basic-page .user-info-container .exception-email {
-  left: 254px;
+  left: 268px;
 }
 
 .page .content #form-basic-page .user-info-container .exception-phone {
-  left: 192px;
+  left: 180px;
 }
 
 .page .content #form-basic-page .user-info-container span {
@@ -250,6 +252,48 @@ h2, p, nav, ul, li, label {
 .page .content #form-basic-page .user-info-container .message-error {
   visibility: visible;
   color: #ff0221;
+}
+
+.page .content #form-basic-page .user-birthday-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page .content #form-basic-page .user-birthday-container h3 {
+  font-size: 1.8rem;
+  color: #767676;
+  margin-bottom: 14px;
+}
+
+.page .content #form-basic-page .user-birthday-container .date-birthday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  margin-bottom: 45px;
+}
+
+.page .content #form-basic-page .user-birthday-container .terms-container {
+  margin-bottom: 52px;
+}
+
+.page .content #form-basic-page .user-birthday-container .next-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 html {
