@@ -4,306 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>team project</title>
-    <link rel="stylesheet" href="src/styles/abstract/reset.css">
-    <link rel="stylesheet" href="src/styles/stye-screen/desktop-style/style.css">
-    <link rel="stylesheet" href="src/styles/stye-screen/responsive.style/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>Titulo Pagina</h1>
+    </header>
 
-    <section class="page" id="basic-page">
-        <div class="content">
-            <header>
-                <div class="title">
-                    <h2>
-                        Team Sign Up
-                    </h2>
-                </div>
-                <nav class="nav-bar" id="nav-bar-page1">
-                    <ul>
-                        <li class="item">Basic</li>
-                        <li class="item">Social</li>
-                        <li class="item">Certificates</li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <form action="" id="form-basic-page">
-                    <div class="user-info-container">
-                        <div class="name-container">
-                            <label for="input-name">Full name *</label>
-                            <input class="input-error" type="text" name="full-name" id="input-name" placeholder="Foo Bar">
+    <div class="container">
+
+ 
+            <div class="page1"><hr><p>Texto 1</p>
+                <label for="nome">Nome:</label>
+                <input type="text" class="nome">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" class="sobrenome">
+                <h1>teste</h1>
+                <button type="submit" class="button1"  disabled="disabled">Enviar</button>
+                
+
+                <div class="mostra"></div>
+            </div>
+
+
+
+            <div class="page2"><hr><p>Texto 2</p>
+                <label for="telefone">telefone:</label>
+                <input type="text" class="telefone">
+                <button class='botao1' onclick="changePage3()">Muda</button>
+                <button class='button2'  disabled="disabled" >mostra</button>
+                <button class='salva'>salva</button>
+            </div>
+
+
+            <div class="page3"><p>Texto 3</p>
             
-                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="message-error" id="error-name">teste de mensagem de erro</span>
-                        </div>
-                        <div class="nickname-container">
-                            <label for="input-nickname">Nickname</label>
-                            <input type="text" name="nickname" id="input-nickname" placeholder="Juanito">
-                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="message-error" id="error-nickname">teste de mensagem de erro</span>
-                        </div>
-                        <div class="horizontal-inputs">
-                            <div class="email-container">
-                                <label for="input-email">Email *</label>
-                                <input type="email" name="email" id="input-email" placeholder="foo@bar.com" class="denial">
-                                <i class="icon-error exception-email"><img src="src/icons/error-icon.svg" alt=""></i>
-                                <span class="message-error" id="email-error">teste de mensagem de erro</span>
-                            </div>
-                            <div class="phone-container">
-                                <label for="input-tel">Phone</label>
-                                <input type="tel" name="telephone" id="input-tel" placeholder="(83) 00000-0000" class="denial">
-                                <i class="icon-error exception-phone"><img src="src/icons/error-icon.svg" alt=""></i>
-                                <span class="message-error" id="phone-error">teste de mensagem de erro</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="user-birthday-container">
-                        <h3>Birthday *</h3>
-                        <div class="date-birthday">
-                            <div class="day">
-                                <label for="selection-days">Day</label>
-                                <select name="days" id="selection-days"></select>
-                            </div>
-                            <div class="month">
-                                <label for="selection-months">Month</label>
-                                <select name="months" id="selection-months"></select>
-                            </div>
-                            <div class="year">
-                                <label for="slection-years">Year</label>
-                                <select name="years" id="selection-years"></select>
-                            </div>
-                            <div class="age">
-                                <p class="age-result"></p>
-                            </div>
-                        </div>
+                <h1>teste</h1>
+                <button type="submit" class="botao3" onclick="" >Recuperar Dados</button>
 
-                        <div class="terms-container">
-                            <input type="checkbox" name="terms" id="check-terms">
-                            <label for="check-terms">
-                                <p>I accept the <a href="#">terms and privacy</a></p>
-                            </label>
-                        </div>
-                        
-                        <div class="next-container">
-                            <button id="next-button">
-                                <span>Next</span>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </main>
-        </div>
-    </section>
+                <div>
+                   <table class="tabela">
+                       <thead>
+                           <tr>
+                               <td>Nome</td>
+                               <td>Sobrenome</td>
+                           </tr>                           
+                       </thead>
+                       <tbody class="tabela-body">
 
+                       </tbody>
 
+                       <table class="tabela">
+                        <hr>
+                        <thead>
+                            <tr>
+                                <td>Telefone:</td>
+                                
+                            </tr>                           
+                        </thead>
+                        <tbody class="tabela-body2">
+ 
+                        </tbody>
+ 
 
-
-
-
-
-    <section class="page" id="social-page">
-        <header>
-            <div class="title">
-                <h2>
-                    Team Sign Up
-                </h2>
+                   </table>
+                </div>
             </div>
 
-            <nav class="nav-bar" id="nav-bar-page2">
-                <ul>
-                    <li class="item">Basic</li>
-                    <li class="item">Social</li>
-                    <li class="item">Certificates</li>
-                </ul>
-            </nav>
-        </header>
+    </div>
 
-        <main>
-            <form action="" id="form-social-page">
-                <div class="user-social-container">
-                    <div class="linkedin-container">
-                        <label for="input-linkedin">LinkeDIn</label>
-                        <input type="text" name="linkedin" id="input-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                        
-                        <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                        <span class="message-error" id="error-linkedin">teste de mensagem de erro</span>
-                    </div>
+    <script src="js/page1.js"></script>
+    <script src="js/page2.js"></script>
+    <script src="js/page3.js"></script>
 
-
-                    <div class="github-container">
-                        <label for="input-github">Github*</label>
-                        <input type="text" name="github" id="input-github" placeholder="https://github.com/foobar">
-                        
-                        <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                        <span class="message-error" id="error-github">teste de mensagem de erro</span>
-                    </div>
-                </div>
-
-                <div class="finish-container">
-                    <button id="next-button">
-                        <span>Next</span>
-                        <i class="fa-solid fa-angle-right"></i>
-                    </button>
-                </div>
-            </form>
-        </main>
-    </section>
     
-
-
-
-
-
-
-    <section class="page" id="certificates-page">
-        <header>
-            <div class="title">
-                <h2>
-                    Team Sign Up
-                </h2>
-            </div>
-
-            <nav class="nav-bar" id="nav-bar-page3">
-                <ul>
-                    <li class="item">Basic</li>
-                    <li class="item">Social</li>
-                    <li class="item">Certificates</li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <form action="" id="form-certificate-page">
-                <div class="user-info-container">
-                    <div class="certificates-container">
-                        <label for="input-certificates">Certificates</label>
-                        <input type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                        
-                        <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                        <span class="message-error" id="error-certificate">teste de mensagem de erro</span>
-
-                        <i class="fa-regular fa-heart" id="regular-heart-icon"></i>
-                        <i class="fa-solid fa-heart" id="solid-heart-icon"></i>
-
-                        <div class="certificate-limiter"></div>
-
-                        <div class="more-container">
-                            <button id="more-certificate-btn">
-                                <i class="fa-solid fa-plus"></i>
-                                <span>More</span>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </button>
-                        </div>
-                    </div>
-         
-                    <div class="bottom-container">
-                        <div class="team-name-container">
-                            <label for="input-team-name">Team Name *</label>
-                            <input type="text" name="team-name" id="input-team-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                            
-                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="message-error" id="error-team-name">teste de mensagem de erro</span>
-                        </div>
-
-
-                        <div class="institution-container">
-                            <label for="input-institution">Institution *</label>
-                            <input type="text" name="institution" id="input-institution" placeholder="Universidade Federal da Paraíba">
-
-                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="message-error" id="error-institution">teste de mensagem de erro</span>
-                        </div>
-
-                        <div class="gaduation-container">
-                            <label for="input-graduation">Graduation *</label>
-                            <input type="text" name="graduation" id="input-graduation" placeholder="Ciências da Computação">
-
-                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="message-error" id="error-graduation">teste de mensagem de erro</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="finish-container">
-                    <a href="user-results.index.html" id="finish-button">
-                        <button id="finish-button">
-                            <i class="fa-solid fa-check"></i>
-                            <span>Finish</span>
-                        </button>
-                    </a>
-                </div>
-            </form>
-        </main>
-    </section>
-
-
-
-
-    <!-- Script local -->
-
-    <script>
-        var page1 = false;
-        var page2 = true;
-        var page3 = true;
-
-        if (page1 == true){
-            let sectionBasic = document.querySelector('#basic-page');
-            sectionBasic.classList.add('hidden')
-        }
-
-        if (page2 == true){
-            let sectionSocial = document.querySelector('#social-page');
-            sectionSocial.classList.add('hidden')
-        }
-
-        if (page3 == true){
-            let sectionCertificates = document.querySelector('#certificates-page');
-            sectionCertificates.classList.add('hidden')
-        }
-        (function(){
-            let start_year = 2010;
-            let html ='';
-            for (let i = start_year; i > start_year - 61; i--) {
-            html += '<option value="'+i+'">'+i+'</option>';
-            }
-            document.getElementById("selection-years").innerHTML = html;
-        })();
-        (function(){
-            let start_month = 1;
-            let html ='';
-            for (let i = start_month; i < start_month + 12; i++) {
-            html += '<option value="'+i+'">'+i+'</option>';
-            }
-            console.log(html);
-            document.getElementById("selection-months").innerHTML = html;
-        })();
-        (function(){
-            let start_day = 1;
-            let html ='';
-            for (let i = start_day; i < start_day + 31; i++) {
-            html += '<option value="'+i+'">'+i+'</option>';
-            }
-            console.log(html);
-            document.getElementById("selection-days").innerHTML = html;
-        })();
-    </script>
-    
-    <!-- Frameworks -->
-
-    <script src="https://kit.fontawesome.com/5d2396c788.js" crossorigin="anonymous"></script> <!--fontAwesome-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> <!--fontAwesome-->
-
-    <!-- Arquivos JS do projeto -->
-
-    <script src="javascript/basic-section/"></script>
-    <script src="javascript/social-section/"></script>
-    <script src="javascript/certificates-section/"></script>
-
 </body>
 </html>
