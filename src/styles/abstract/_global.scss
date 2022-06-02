@@ -3,6 +3,8 @@
 html{
     font-family: $primary-font;
     font-size: 62.5%;
+    width: 100vw;
+    height: 100vh;
 }
 
 h2, p, nav, ul, li, label{
@@ -17,3 +19,4 @@ h2, p, nav, ul, li, label{
 .hidden{
     display: none !important;
 }
+

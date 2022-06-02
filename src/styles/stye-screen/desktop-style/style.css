@@ -1,6 +1,8 @@
 html {
   font-family: "Nunito", sans-serif;
   font-size: 62.5%;
+  width: 100vw;
+  height: 100vh;
 }
 
 h2, p, nav, ul, li, label {
@@ -15,23 +17,23 @@ h2, p, nav, ul, li, label {
   display: none !important;
 }
 
-body {
+.page {
   width: 100vw;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 45px;
 }
 
-body #basic-page {
-  background-color: #a4ceff;
+.page .content {
   max-width: 620px;
-  padding: 45px;
+  height: 790px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,20 +48,24 @@ body #basic-page {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 35px;
+  padding: 45px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
 }
 
-body #basic-page header {
+.page .content header {
   width: 100%;
 }
 
-body #basic-page header .title {
+.page .content header .title {
   font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 33px;
 }
 
-body #basic-page header ul {
+.page .content header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,9 +73,10 @@ body #basic-page header ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: unset;
 }
 
-body #basic-page header ul li {
+.page .content header ul li {
   font-size: 1.6rem;
   line-height: 18px;
   font-weight: 400;
@@ -90,13 +97,13 @@ body #basic-page header ul li {
   border-bottom: 2px solid #aaaaaa;
 }
 
-body #basic-page header ul li:first-child {
+.page .content header ul li:first-child {
   border-bottom: 3px solid #074ee8;
   border-bottom-right-radius: 1px;
   border-bottom-left-radius: 1px;
 }
 
-body #basic-page #form-basic-page {
+.page .content #form-basic-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,27 +114,29 @@ body #basic-page #form-basic-page {
   row-gap: 35px;
 }
 
-body #basic-page #form-basic-page .user-info-container {
+.page .content #form-basic-page .user-info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
 }
 
-body #basic-page #form-basic-page .user-info-container label, body #basic-page #form-basic-page .user-info-container input {
+.page .content #form-basic-page .user-info-container label, .page .content #form-basic-page .user-info-container input {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
 }
 
-body #basic-page #form-basic-page .user-info-container label {
+.page .content #form-basic-page .user-info-container label {
   font-size: 1.4rem;
   line-height: 16px;
   color: #767676;
+  margin-bottom: 4px;
 }
 
-body #basic-page #form-basic-page .user-info-container input {
+.page .content #form-basic-page .user-info-container input {
   padding: 11px 12px;
   border: 2px solid #aaaaaa;
   border-radius: 4px;
@@ -135,31 +144,41 @@ body #basic-page #form-basic-page .user-info-container input {
   line-height: 18px;
 }
 
-body #basic-page #form-basic-page .user-info-container input:not(.denial) {
+.page .content #form-basic-page .user-info-container input::-webkit-input-placeholder {
+  color: #767676;
+  width: 90%;
+}
+
+.page .content #form-basic-page .user-info-container input:-ms-input-placeholder {
+  color: #767676;
+  width: 90%;
+}
+
+.page .content #form-basic-page .user-info-container input::-ms-input-placeholder {
+  color: #767676;
+  width: 90%;
+}
+
+.page .content #form-basic-page .user-info-container input::placeholder {
+  color: #767676;
+  width: 90%;
+}
+
+.page .content #form-basic-page .user-info-container .name-container, .page .content #form-basic-page .user-info-container .nickname-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   margin-bottom: 35px;
 }
 
-body #basic-page #form-basic-page .user-info-container input::-webkit-input-placeholder {
-  color: #767676;
-  width: 90%;
-}
-
-body #basic-page #form-basic-page .user-info-container input:-ms-input-placeholder {
-  color: #767676;
-  width: 90%;
-}
-
-body #basic-page #form-basic-page .user-info-container input::-ms-input-placeholder {
-  color: #767676;
-  width: 90%;
-}
-
-body #basic-page #form-basic-page .user-info-container input::placeholder {
-  color: #767676;
-  width: 90%;
-}
-
-body #basic-page #form-basic-page .user-info-container .horizontal-inputs {
+.page .content #form-basic-page .user-info-container .horizontal-inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +189,7 @@ body #basic-page #form-basic-page .user-info-container .horizontal-inputs {
           column-gap: 24px;
 }
 
-body #basic-page #form-basic-page .user-info-container .horizontal-inputs .email-container {
+.page .content #form-basic-page .user-info-container .horizontal-inputs .email-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +202,7 @@ body #basic-page #form-basic-page .user-info-container .horizontal-inputs .email
           flex: 1 1 75%;
 }
 
-body #basic-page #form-basic-page .user-info-container .horizontal-inputs .phone-container {
+.page .content #form-basic-page .user-info-container .horizontal-inputs .phone-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,30 +211,96 @@ body #basic-page #form-basic-page .user-info-container .horizontal-inputs .phone
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
+      -ms-flex: 1 2 75%;
+          flex: 1 2 75%;
 }
 
-body #basic-page #form-basic-page .user-info-container .input-error {
+.page .content #form-basic-page .user-info-container .input-error {
   border-color: #ff0221;
-  color: #ff0221;
 }
 
-body #basic-page #form-basic-page .user-info-container .input-error:focus {
-  color: #767676;
+.page .content #form-basic-page .user-info-container .input-error:focus {
   outline: #ff0221;
 }
 
-body #basic-page #form-basic-page .user-info-container .input-error::after {
-  content: "aaa";
-  font-size: 18px;
-  width: 10px;
-  height: 10px;
+.page .content #form-basic-page .user-info-container i {
+  visibility: hidden;
+  position: relative;
+  left: 500px;
+  bottom: 32px;
+}
+
+.page .content #form-basic-page .user-info-container .icon-error {
+  visibility: visible;
+}
+
+.page .content #form-basic-page .user-info-container .exception-email {
+  left: 268px;
+}
+
+.page .content #form-basic-page .user-info-container .exception-phone {
+  left: 180px;
+}
+
+.page .content #form-basic-page .user-info-container span {
+  visibility: hidden;
+  font-size: 1.4rem;
+  position: relative;
+  margin-top: -23px;
+}
+
+.page .content #form-basic-page .user-info-container .message-error {
+  visibility: visible;
+  color: #ff0221;
+}
+
+.page .content #form-basic-page .user-birthday-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page .content #form-basic-page .user-birthday-container h3 {
+  font-size: 1.8rem;
+  color: #767676;
+  margin-bottom: 14px;
+}
+
+.page .content #form-basic-page .user-birthday-container .date-birthday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  margin-bottom: 45px;
+}
+
+.page .content #form-basic-page .user-birthday-container .terms-container {
+  margin-bottom: 52px;
+}
+
+.page .content #form-basic-page .user-birthday-container .next-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 html {
   font-family: "Nunito", sans-serif;
   font-size: 62.5%;
+  width: 100vw;
+  height: 100vh;
 }
 
 h2, p, nav, ul, li, label {
@@ -233,6 +318,8 @@ h2, p, nav, ul, li, label {
 html {
   font-family: "Nunito", sans-serif;
   font-size: 62.5%;
+  width: 100vw;
+  height: 100vh;
 }
 
 h2, p, nav, ul, li, label {

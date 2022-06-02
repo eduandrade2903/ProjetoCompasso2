@@ -1,25 +1,29 @@
 @import '../../../abstract/global';
 
-body{
+.page{
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
+    padding: 45px;
 
-    #basic-page{
-        background-color: rgb(164, 206, 255);
+
+    .content{
+        // background-color: rgb(164, 206, 255);
         max-width: 620px;
-        padding: 45px;
+        height: 790px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         row-gap: 35px;
+        padding: 45px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 20px;
 
         header{
             width: 100%;
-
+            
             .title{
                 font-family: $title-font;
                 font-size: 1.8rem;
@@ -31,6 +35,7 @@ body{
                 display: flex;
                 width: 100%;
                 justify-content: center;
+                padding-left: unset;
 
                 li{
                     font-size: 1.6rem;
@@ -61,6 +66,7 @@ body{
             .user-info-container{
                 display: flex;
                 flex-wrap: wrap;
+                position: relative;
 
                 label, input{
                     flex: 1 1 100%;
@@ -70,6 +76,7 @@ body{
                     font-size: 1.4rem;
                     line-height: 16px;
                     color: #767676;
+                    margin-bottom: 4px;
                 }
 
                 input{
@@ -79,14 +86,17 @@ body{
                     font-size: 1.6rem;
                     line-height: 18px;
 
-                    &:not(.denial){
-                        margin-bottom: 35px;
-                    }
-
                     &::placeholder{
                         color: #767676;
                         width: 90%;
                     }
+                }
+
+                .name-container, .nickname-container{
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1 1 100%;
+                    margin-bottom: 35px;
                 }
 
                 .horizontal-inputs{
@@ -103,25 +113,81 @@ body{
                     .phone-container{
                         display: flex;
                         flex-direction: column;
-                        flex: 1 1 25%;
+                        flex: 1 2 75%;
                     }
                 }
 
+                // ------------informações de erro--------------
+
                 .input-error{
                     border-color: #ff0221;
-                    color: #ff0221;
-
+                    
                     &:focus{
-                        color: #767676;
                         outline: #ff0221;
                     }
                 }
 
-                .input-error::after{
-                    content: "aaa";
-                    font-size: 18px;
-                    width: 10px;
-                    height: 10px;
+                i{
+                    visibility: hidden;
+                    position: relative;
+                    left: 500px;
+                    bottom: 32px;   
+                }
+
+                .icon-error{
+                    visibility: visible;
+                }
+
+                .exception-email{
+                    left: 268px;
+                }
+
+                .exception-phone{
+                    left: 180px;
+                }
+
+                span{
+                    visibility: hidden;
+                    font-size: 1.4rem;
+                    position: relative;
+                    margin-top: -23px;
+                }
+
+                .message-error{
+                    visibility: visible;
+                    color: #ff0221;
+                }
+
+
+            }
+
+            .user-birthday-container{
+                display: flex;
+                flex-direction: column;
+                
+                h3{
+                    font-size: 1.8rem;
+                    color: #767676;
+                    margin-bottom: 14px;
+                }
+
+                .date-birthday{
+                    display: flex;
+                    flex: 1 1 100%;
+                    margin-bottom: 45px;
+                }
+
+                .terms-container{
+                    margin-bottom: 52px;
+                    input{
+
+                    }
+                }
+
+                .next-container{
+                    display: flex;
+                    flex: 1 1 100%;
+                    justify-content: end;
                 }
 
             }
