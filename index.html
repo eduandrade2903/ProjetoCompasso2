@@ -124,56 +124,58 @@
 
 
 
-
+    
 
 
 
     <section class="page" id="social-page">
-        <header>
-            <div class="title">
-                <h2>
-                    Team Sign Up
-                </h2>
-            </div>
-
-            <nav class="nav-bar" id="nav-bar-page2">
-                <ul>
-                    <li class="item">Basic</li>
-                    <li class="item">Social</li>
-                    <li class="item">Certificates</li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <form action="" id="form-social-page">
-                <div class="user-social-container">
-                    <div class="linkedin-container">
-                        <label for="input-linkedin">LinkeDIn</label>
-                        <input type="text" name="linkedin" id="input-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                        
-                        <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                        <span class="message-error" id="error-linkedin">teste de mensagem de erro</span>
-                    </div>
-
-
-                    <div class="github-container">
-                        <label for="input-github">Github*</label>
-                        <input type="text" name="github" id="input-github" placeholder="https://github.com/foobar">
-                        
-                        <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                        <span class="message-error" id="error-github">teste de mensagem de erro</span>
-                    </div>
+        <div class="content">
+            <header>
+                <div class="title">
+                    <h2>
+                        Team Sign Up
+                    </h2>
                 </div>
 
-                <div class="finish-container">
-                    <button id="next-button">
-                        <span>Next</span>
-                        <i class="fa-solid fa-angle-right"></i>
-                    </button>
-                </div>
-            </form>
-        </main>
+                <nav class="nav-bar" id="nav-bar-page2">
+                    <ul>
+                        <li class="item">Basic</li>
+                        <li class="item" id="item2">Social</li>
+                        <li class="item">Certificates</li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <form action="" id="form-social-page">
+                    <div class="user-social-container">
+                        <div class="linkedin-container">
+                            <label for="input-linkedin">LinkedIn</label>
+                            <input type="text" name="linkedin" id="input-name" class="input-error" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                            
+                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-linkedin">teste de mensagem de erro</span>
+                        </div>
+
+
+                        <div class="github-container">
+                            <label for="input-github">Github*</label>
+                            <input type="text" name="github" id="input-github" class="input-error" placeholder="https://github.com/foobar">
+                            
+                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-github">teste de mensagem de erro</span>
+                        </div>
+                    </div>
+
+                    <div class="finish-container">
+                        <button id="next-button">
+                            <span>Next</span>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </main>
+        </div>
     </section>
     
 
@@ -269,8 +271,8 @@
     <!-- Script local -->
 
     <script>
-        var page1 = false;
-        var page2 = true;
+        var page1 = true;
+        var page2 = false;
         var page3 = true;
 
         if (page1 == true){
