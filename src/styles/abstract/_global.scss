@@ -7,7 +7,11 @@ html{
     height: 100vh;
 }
 
-h2, p, nav, ul, li, label{
+body::-webkit-scrollbar{
+    display: none;
+}
+
+h2, p, nav, ul, li, label, #age-result{
     -webkit-touch-callout: none; 
     -webkit-user-select: none;
     -khtml-user-select: none;     
@@ -15,6 +19,7 @@ h2, p, nav, ul, li, label{
     -ms-user-select: none;        
     user-select: none;            
 }
+
 
 .hidden{
     display: none !important;

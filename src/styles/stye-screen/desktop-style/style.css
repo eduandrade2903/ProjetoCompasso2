@@ -5,7 +5,11 @@ html {
   height: 100vh;
 }
 
-h2, p, nav, ul, li, label {
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h2, p, nav, ul, li, label, #age-result {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -33,7 +37,9 @@ h2, p, nav, ul, li, label {
 
 .page .content {
   max-width: 620px;
-  height: 790px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +120,52 @@ h2, p, nav, ul, li, label {
   row-gap: 35px;
 }
 
+.page .content #form-basic-page label, .page .content #form-basic-page input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.page .content #form-basic-page label, .page .content #form-basic-page legend {
+  font-size: 1.4rem;
+  line-height: 16px;
+  color: #767676;
+  margin-bottom: 4px;
+}
+
+.page .content #form-basic-page input {
+  padding: 11px 12px;
+  border: 2px solid #aaaaaa;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  line-height: 18px;
+  height: 40px;
+}
+
+.page .content #form-basic-page input:focus {
+  outline-color: #074ee8;
+}
+
+.page .content #form-basic-page input::-webkit-input-placeholder {
+  color: #767676;
+  width: 90%;
+}
+
+.page .content #form-basic-page input:-ms-input-placeholder {
+  color: #767676;
+  width: 90%;
+}
+
+.page .content #form-basic-page input::-ms-input-placeholder {
+  color: #767676;
+  width: 90%;
+}
+
+.page .content #form-basic-page input::placeholder {
+  color: #767676;
+  width: 90%;
+}
+
 .page .content #form-basic-page .user-info-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,47 +173,6 @@ h2, p, nav, ul, li, label {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-}
-
-.page .content #form-basic-page .user-info-container label, .page .content #form-basic-page .user-info-container input {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-}
-
-.page .content #form-basic-page .user-info-container label {
-  font-size: 1.4rem;
-  line-height: 16px;
-  color: #767676;
-  margin-bottom: 4px;
-}
-
-.page .content #form-basic-page .user-info-container input {
-  padding: 11px 12px;
-  border: 2px solid #aaaaaa;
-  border-radius: 4px;
-  font-size: 1.6rem;
-  line-height: 18px;
-}
-
-.page .content #form-basic-page .user-info-container input::-webkit-input-placeholder {
-  color: #767676;
-  width: 90%;
-}
-
-.page .content #form-basic-page .user-info-container input:-ms-input-placeholder {
-  color: #767676;
-  width: 90%;
-}
-
-.page .content #form-basic-page .user-info-container input::-ms-input-placeholder {
-  color: #767676;
-  width: 90%;
-}
-
-.page .content #form-basic-page .user-info-container input::placeholder {
-  color: #767676;
-  width: 90%;
 }
 
 .page .content #form-basic-page .user-info-container .name-container, .page .content #form-basic-page .user-info-container .nickname-container {
@@ -176,6 +187,7 @@ h2, p, nav, ul, li, label {
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   margin-bottom: 35px;
+  position: relative;
 }
 
 .page .content #form-basic-page .user-info-container .horizontal-inputs {
@@ -198,8 +210,11 @@ h2, p, nav, ul, li, label {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 75%;
-          flex: 1 1 75%;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex: 1 1 75%;
+      flex: 1 1 75%;
+  position: relative;
 }
 
 .page .content #form-basic-page .user-info-container .horizontal-inputs .phone-container {
@@ -211,23 +226,22 @@ h2, p, nav, ul, li, label {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
-      -ms-flex: 1 2 75%;
-          flex: 1 2 75%;
+      -ms-flex: 1 2 25%;
+          flex: 1 2 25%;
+  position: relative;
 }
 
 .page .content #form-basic-page .user-info-container .input-error {
-  border-color: #ff0221;
-}
-
-.page .content #form-basic-page .user-info-container .input-error:focus {
-  outline: #ff0221;
+  border-color: #ff0225;
 }
 
 .page .content #form-basic-page .user-info-container i {
   visibility: hidden;
-  position: relative;
-  left: 500px;
-  bottom: 32px;
+  position: absolute;
+  left: 94%;
+  top: 36px;
+  width: 20px;
+  height: 20px;
 }
 
 .page .content #form-basic-page .user-info-container .icon-error {
@@ -235,18 +249,22 @@ h2, p, nav, ul, li, label {
 }
 
 .page .content #form-basic-page .user-info-container .exception-email {
-  left: 268px;
+  left: 90%;
+}
+
+@media (max-width: 720px) {
+  .page .content #form-basic-page .user-info-container .exception-email {
+    left: 86%;
+  }
 }
 
 .page .content #form-basic-page .user-info-container .exception-phone {
-  left: 180px;
+  left: 86%;
 }
 
 .page .content #form-basic-page .user-info-container span {
   visibility: hidden;
   font-size: 1.4rem;
-  position: relative;
-  margin-top: -23px;
 }
 
 .page .content #form-basic-page .user-info-container .message-error {
@@ -278,10 +296,136 @@ h2, p, nav, ul, li, label {
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   margin-bottom: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 22px;
+          column-gap: 22px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page .content #form-basic-page .user-birthday-container .date-birthday select, .page .content #form-basic-page .user-birthday-container .date-birthday #age-result {
+  border: 2px solid #aaaaaa;
+  border-radius: 4px;
+  height: 40px;
+  font-size: 1.6rem;
+  color: #767676;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  padding-left: 8px;
+}
+
+.page .content #form-basic-page .user-birthday-container .date-birthday select:hover, .page .content #form-basic-page .user-birthday-container .date-birthday #age-result:hover {
+  background-color: #e0e0e0;
+}
+
+.page .content #form-basic-page .user-birthday-container .date-birthday select:focus, .page .content #form-basic-page .user-birthday-container .date-birthday #age-result:focus {
+  outline: none;
+}
+
+.page .content #form-basic-page .user-birthday-container .date-birthday select option, .page .content #form-basic-page .user-birthday-container .date-birthday #age-result option {
+  font-size: 1.6rem;
+  color: #767676;
+}
+
+.page .content #form-basic-page .user-birthday-container .date-birthday #age-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 12px;
+}
+
+.page .content #form-basic-page .user-birthday-container .date-birthday #age-result:hover {
+  background-color: #ffffff;
+}
+
+.page .content #form-basic-page .user-birthday-container .date-birthday .day-container, .page .content #form-basic-page .user-birthday-container .date-birthday .month-container, .page .content #form-basic-page .user-birthday-container .date-birthday .year-container, .page .content #form-basic-page .user-birthday-container .date-birthday .age-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
+  position: relative;
+}
+
+.page .content #form-basic-page .user-birthday-container .date-birthday .custom-arrow {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 2px solid #aaaaaa;
+  border-top: 1px;
+  border-left: none;
+  width: 40px;
+  height: 36px;
+  right: 0;
+  top: 22px;
+  pointer-events: none;
+}
+
+.page .content #form-basic-page .user-birthday-container .date-birthday .custom-arrow i {
+  margin: 2px 0 0 2px;
+  color: #111111;
+  font-size: 16px;
 }
 
 .page .content #form-basic-page .user-birthday-container .terms-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 18px;
+  width: 260px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 52px;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+}
+
+.page .content #form-basic-page .user-birthday-container .terms-container input {
+  width: 20px;
+  height: 20px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20px;
+          flex: 0 1 20px;
+  margin-bottom: 3px;
+}
+
+.page .content #form-basic-page .user-birthday-container .terms-container input:checked {
+  color: #074ee8;
+}
+
+.page .content #form-basic-page .user-birthday-container .terms-container label {
+  color: #111111;
 }
 
 .page .content #form-basic-page .user-birthday-container .next-container {
@@ -296,6 +440,32 @@ h2, p, nav, ul, li, label {
           justify-content: end;
 }
 
+.page .content #form-basic-page .user-birthday-container .next-container #next-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  font-size: 1.6rem;
+  background-color: #074ee8;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  line-height: 18px;
+  width: 81px;
+  height: 40px;
+}
+
+.page .content #form-basic-page .user-birthday-container .next-container #next-button i {
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
 html {
   font-family: "Nunito", sans-serif;
   font-size: 62.5%;
@@ -303,7 +473,11 @@ html {
   height: 100vh;
 }
 
-h2, p, nav, ul, li, label {
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h2, p, nav, ul, li, label, #age-result {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -322,7 +496,11 @@ html {
   height: 100vh;
 }
 
-h2, p, nav, ul, li, label {
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h2, p, nav, ul, li, label, #age-result {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
