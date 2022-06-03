@@ -117,7 +117,7 @@ h2, p, nav, ul, li, label, #age-result {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 35px;
+  row-gap: 25px;
 }
 
 .page .content #form-basic-page label, .page .content #form-basic-page input {
@@ -143,7 +143,15 @@ h2, p, nav, ul, li, label, #age-result {
 }
 
 .page .content #form-basic-page input:focus {
-  outline-color: #074ee8;
+  outline-color: #aaaaaa;
+}
+
+.page .content #form-basic-page input:focus + .icon-error {
+  visibility: hidden;
+}
+
+.page .content #form-basic-page input:focus ~ .message-error {
+  visibility: hidden;
 }
 
 .page .content #form-basic-page input::-webkit-input-placeholder {
@@ -186,7 +194,7 @@ h2, p, nav, ul, li, label, #age-result {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   position: relative;
 }
 
@@ -459,6 +467,14 @@ h2, p, nav, ul, li, label, #age-result {
   line-height: 18px;
   width: 81px;
   height: 40px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.page .content #form-basic-page .user-birthday-container .next-container #next-button:hover {
+  background-color: #053db7;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .page .content #form-basic-page .user-birthday-container .next-container #next-button i {

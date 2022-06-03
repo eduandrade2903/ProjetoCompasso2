@@ -61,7 +61,7 @@
         #form-basic-page{
             display: flex;
             flex-direction: column;
-            row-gap: 35px;
+            row-gap: 25px;
 
             label, input{
                 flex: 1 1 100%;
@@ -83,7 +83,15 @@
                 height: 40px;
 
                 &:focus{
-                    outline-color: $primary-color; 
+                    outline-color: #aaaaaa;
+
+                    + .icon-error{
+                        visibility: hidden;
+                    }
+
+                    ~ .message-error {
+                        visibility: hidden;
+                    }
                 }
 
                 &::placeholder{
@@ -102,7 +110,7 @@
                     display: flex;
                     flex-direction: column;
                     flex: 1 1 100%;
-                    margin-bottom: 35px;
+                    margin-bottom: 25px;
                     position: relative;
                 }
 
@@ -141,7 +149,7 @@
                     left: 94%;
                     top: 36px;
                     width: 20px;
-                    height: 20px;   
+                    height: 20px;
                 }
 
                 .icon-error{
@@ -307,9 +315,11 @@
                         line-height: 18px;
                         width: 81px;
                         height: 40px;
+                        transition: .2s ease-in-out;
 
-                        span{
-                            
+                        &:hover{
+                            background-color: #053db7;
+                            transition: .2s ease-in-out;
                         }
 
                         i{
