@@ -21,7 +21,7 @@ h2, p, nav, ul, li, label, #age-result {
   display: none !important;
 }
 
-.page {
+#basic-page {
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +35,7 @@ h2, p, nav, ul, li, label, #age-result {
   padding: 45px;
 }
 
-.page .content {
+#basic-page .content {
   max-width: 620px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -60,18 +60,18 @@ h2, p, nav, ul, li, label, #age-result {
   border-radius: 20px;
 }
 
-.page .content header {
+#basic-page .content header {
   width: 100%;
 }
 
-.page .content header .title {
+#basic-page .content header .title {
   font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 33px;
 }
 
-.page .content header ul {
+#basic-page .content header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +82,7 @@ h2, p, nav, ul, li, label, #age-result {
   padding-left: unset;
 }
 
-.page .content header ul li {
+#basic-page .content header ul li {
   font-size: 1.6rem;
   line-height: 18px;
   font-weight: 400;
@@ -103,13 +103,13 @@ h2, p, nav, ul, li, label, #age-result {
   border-bottom: 2px solid #aaaaaa;
 }
 
-.page .content header ul li:first-child {
+#basic-page .content header ul li:first-child {
   border-bottom: 3px solid #074ee8;
   border-bottom-right-radius: 1px;
   border-bottom-left-radius: 1px;
 }
 
-.page .content #form-basic-page {
+#basic-page .content #form-basic-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,23 +117,23 @@ h2, p, nav, ul, li, label, #age-result {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 25px;
+  row-gap: 12px;
 }
 
-.page .content #form-basic-page label, .page .content #form-basic-page input {
+#basic-page .content #form-basic-page label, #basic-page .content #form-basic-page input {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
 }
 
-.page .content #form-basic-page label, .page .content #form-basic-page legend {
+#basic-page .content #form-basic-page label, #basic-page .content #form-basic-page legend {
   font-size: 1.4rem;
   line-height: 16px;
   color: #767676;
   margin-bottom: 4px;
 }
 
-.page .content #form-basic-page input {
+#basic-page .content #form-basic-page input {
   padding: 11px 12px;
   border: 2px solid #aaaaaa;
   border-radius: 4px;
@@ -142,39 +142,39 @@ h2, p, nav, ul, li, label, #age-result {
   height: 40px;
 }
 
-.page .content #form-basic-page input:focus {
+#basic-page .content #form-basic-page input:focus {
   outline-color: #aaaaaa;
 }
 
-.page .content #form-basic-page input:focus + .icon-error {
+#basic-page .content #form-basic-page input:focus + .icon-error {
   visibility: hidden;
 }
 
-.page .content #form-basic-page input:focus ~ .message-error {
+#basic-page .content #form-basic-page input:focus ~ .message-error {
   visibility: hidden;
 }
 
-.page .content #form-basic-page input::-webkit-input-placeholder {
+#basic-page .content #form-basic-page input::-webkit-input-placeholder {
   color: #767676;
   width: 90%;
 }
 
-.page .content #form-basic-page input:-ms-input-placeholder {
+#basic-page .content #form-basic-page input:-ms-input-placeholder {
   color: #767676;
   width: 90%;
 }
 
-.page .content #form-basic-page input::-ms-input-placeholder {
+#basic-page .content #form-basic-page input::-ms-input-placeholder {
   color: #767676;
   width: 90%;
 }
 
-.page .content #form-basic-page input::placeholder {
+#basic-page .content #form-basic-page input::placeholder {
   color: #767676;
   width: 90%;
 }
 
-.page .content #form-basic-page .user-info-container {
+#basic-page .content #form-basic-page .user-info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +183,7 @@ h2, p, nav, ul, li, label, #age-result {
   position: relative;
 }
 
-.page .content #form-basic-page .user-info-container .name-container, .page .content #form-basic-page .user-info-container .nickname-container {
+#basic-page .content #form-basic-page .user-info-container .name-container, #basic-page .content #form-basic-page .user-info-container .nickname-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,11 +194,11 @@ h2, p, nav, ul, li, label, #age-result {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   position: relative;
 }
 
-.page .content #form-basic-page .user-info-container .horizontal-inputs {
+#basic-page .content #form-basic-page .user-info-container .horizontal-inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,7 +209,7 @@ h2, p, nav, ul, li, label, #age-result {
           column-gap: 24px;
 }
 
-.page .content #form-basic-page .user-info-container .horizontal-inputs .email-container {
+#basic-page .content #form-basic-page .user-info-container .horizontal-inputs .email-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +225,7 @@ h2, p, nav, ul, li, label, #age-result {
   position: relative;
 }
 
-.page .content #form-basic-page .user-info-container .horizontal-inputs .phone-container {
+#basic-page .content #form-basic-page .user-info-container .horizontal-inputs .phone-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,11 +239,11 @@ h2, p, nav, ul, li, label, #age-result {
   position: relative;
 }
 
-.page .content #form-basic-page .user-info-container .input-error {
+#basic-page .content #form-basic-page .user-info-container .input-error {
   border-color: #ff0225;
 }
 
-.page .content #form-basic-page .user-info-container i {
+#basic-page .content #form-basic-page .user-info-container i {
   visibility: hidden;
   position: absolute;
   left: 94%;
@@ -252,35 +252,35 @@ h2, p, nav, ul, li, label, #age-result {
   height: 20px;
 }
 
-.page .content #form-basic-page .user-info-container .icon-error {
+#basic-page .content #form-basic-page .user-info-container .icon-error {
   visibility: visible;
 }
 
-.page .content #form-basic-page .user-info-container .exception-email {
+#basic-page .content #form-basic-page .user-info-container .exception-email {
   left: 90%;
 }
 
 @media (max-width: 720px) {
-  .page .content #form-basic-page .user-info-container .exception-email {
+  #basic-page .content #form-basic-page .user-info-container .exception-email {
     left: 86%;
   }
 }
 
-.page .content #form-basic-page .user-info-container .exception-phone {
+#basic-page .content #form-basic-page .user-info-container .exception-phone {
   left: 86%;
 }
 
-.page .content #form-basic-page .user-info-container span {
+#basic-page .content #form-basic-page .user-info-container span {
   visibility: hidden;
   font-size: 1.4rem;
 }
 
-.page .content #form-basic-page .user-info-container .message-error {
+#basic-page .content #form-basic-page .user-info-container .message-error {
   visibility: visible;
   color: #ff0221;
 }
 
-.page .content #form-basic-page .user-birthday-container {
+#basic-page .content #form-basic-page .user-birthday-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,13 +290,13 @@ h2, p, nav, ul, li, label, #age-result {
           flex-direction: column;
 }
 
-.page .content #form-basic-page .user-birthday-container h3 {
+#basic-page .content #form-basic-page .user-birthday-container h3 {
   font-size: 1.8rem;
   color: #767676;
   margin-bottom: 14px;
 }
 
-.page .content #form-basic-page .user-birthday-container .date-birthday {
+#basic-page .content #form-basic-page .user-birthday-container .date-birthday {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,7 +313,7 @@ h2, p, nav, ul, li, label, #age-result {
       flex-wrap: wrap;
 }
 
-.page .content #form-basic-page .user-birthday-container .date-birthday select, .page .content #form-basic-page .user-birthday-container .date-birthday #age-result {
+#basic-page .content #form-basic-page .user-birthday-container .date-birthday select, #basic-page .content #form-basic-page .user-birthday-container .date-birthday #age-result {
   border: 2px solid #aaaaaa;
   border-radius: 4px;
   height: 40px;
@@ -325,20 +325,20 @@ h2, p, nav, ul, li, label, #age-result {
   padding-left: 8px;
 }
 
-.page .content #form-basic-page .user-birthday-container .date-birthday select:hover, .page .content #form-basic-page .user-birthday-container .date-birthday #age-result:hover {
+#basic-page .content #form-basic-page .user-birthday-container .date-birthday select:hover, #basic-page .content #form-basic-page .user-birthday-container .date-birthday #age-result:hover {
   background-color: #e0e0e0;
 }
 
-.page .content #form-basic-page .user-birthday-container .date-birthday select:focus, .page .content #form-basic-page .user-birthday-container .date-birthday #age-result:focus {
+#basic-page .content #form-basic-page .user-birthday-container .date-birthday select:focus, #basic-page .content #form-basic-page .user-birthday-container .date-birthday #age-result:focus {
   outline: none;
 }
 
-.page .content #form-basic-page .user-birthday-container .date-birthday select option, .page .content #form-basic-page .user-birthday-container .date-birthday #age-result option {
+#basic-page .content #form-basic-page .user-birthday-container .date-birthday select option, #basic-page .content #form-basic-page .user-birthday-container .date-birthday #age-result option {
   font-size: 1.6rem;
   color: #767676;
 }
 
-.page .content #form-basic-page .user-birthday-container .date-birthday #age-result {
+#basic-page .content #form-basic-page .user-birthday-container .date-birthday #age-result {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,11 +348,11 @@ h2, p, nav, ul, li, label, #age-result {
   padding-left: 12px;
 }
 
-.page .content #form-basic-page .user-birthday-container .date-birthday #age-result:hover {
+#basic-page .content #form-basic-page .user-birthday-container .date-birthday #age-result:hover {
   background-color: #ffffff;
 }
 
-.page .content #form-basic-page .user-birthday-container .date-birthday .day-container, .page .content #form-basic-page .user-birthday-container .date-birthday .month-container, .page .content #form-basic-page .user-birthday-container .date-birthday .year-container, .page .content #form-basic-page .user-birthday-container .date-birthday .age-container {
+#basic-page .content #form-basic-page .user-birthday-container .date-birthday .day-container, #basic-page .content #form-basic-page .user-birthday-container .date-birthday .month-container, #basic-page .content #form-basic-page .user-birthday-container .date-birthday .year-container, #basic-page .content #form-basic-page .user-birthday-container .date-birthday .age-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,7 +366,7 @@ h2, p, nav, ul, li, label, #age-result {
   position: relative;
 }
 
-.page .content #form-basic-page .user-birthday-container .date-birthday .custom-arrow {
+#basic-page .content #form-basic-page .user-birthday-container .date-birthday .custom-arrow {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   display: -webkit-box;
@@ -393,13 +393,13 @@ h2, p, nav, ul, li, label, #age-result {
   pointer-events: none;
 }
 
-.page .content #form-basic-page .user-birthday-container .date-birthday .custom-arrow i {
+#basic-page .content #form-basic-page .user-birthday-container .date-birthday .custom-arrow i {
   margin: 2px 0 0 2px;
   color: #111111;
   font-size: 16px;
 }
 
-.page .content #form-basic-page .user-birthday-container .terms-container {
+#basic-page .content #form-basic-page .user-birthday-container .terms-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,7 +417,7 @@ h2, p, nav, ul, li, label, #age-result {
           column-gap: 8px;
 }
 
-.page .content #form-basic-page .user-birthday-container .terms-container input {
+#basic-page .content #form-basic-page .user-birthday-container .terms-container input {
   width: 20px;
   height: 20px;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -428,15 +428,15 @@ h2, p, nav, ul, li, label, #age-result {
   margin-bottom: 3px;
 }
 
-.page .content #form-basic-page .user-birthday-container .terms-container input:checked {
+#basic-page .content #form-basic-page .user-birthday-container .terms-container input:checked {
   color: #074ee8;
 }
 
-.page .content #form-basic-page .user-birthday-container .terms-container label {
+#basic-page .content #form-basic-page .user-birthday-container .terms-container label {
   color: #111111;
 }
 
-.page .content #form-basic-page .user-birthday-container .next-container {
+#basic-page .content #form-basic-page .user-birthday-container .next-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,7 +448,7 @@ h2, p, nav, ul, li, label, #age-result {
           justify-content: end;
 }
 
-.page .content #form-basic-page .user-birthday-container .next-container #next-button {
+#basic-page .content #form-basic-page .user-birthday-container .next-container #next-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,13 +471,13 @@ h2, p, nav, ul, li, label, #age-result {
   transition: .2s ease-in-out;
 }
 
-.page .content #form-basic-page .user-birthday-container .next-container #next-button:hover {
+#basic-page .content #form-basic-page .user-birthday-container .next-container #next-button:hover {
   background-color: #053db7;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
 
-.page .content #form-basic-page .user-birthday-container .next-container #next-button i {
+#basic-page .content #form-basic-page .user-birthday-container .next-container #next-button i {
   margin-top: 3px;
   margin-right: 5px;
 }
@@ -526,5 +526,448 @@ h2, p, nav, ul, li, label, #age-result {
 
 .hidden {
   display: none !important;
+}
+
+#certificates-page {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 45px;
+}
+
+#certificates-page .content {
+  max-width: 620px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 35px;
+  padding: 45px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+}
+
+#certificates-page .content header {
+  width: 100%;
+}
+
+#certificates-page .content header .title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 33px;
+}
+
+#certificates-page .content header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: unset;
+}
+
+#certificates-page .content header ul li {
+  font-size: 1.6rem;
+  line-height: 18px;
+  font-weight: 400;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 44px;
+  color: #074ee8;
+  border-bottom: 2px solid #aaaaaa;
+}
+
+#certificates-page .content header ul li:last-child {
+  border-bottom: 3px solid #074ee8;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+}
+
+#certificates-page .content #form-certificates-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#certificates-page .content #form-certificates-page label, #certificates-page .content #form-certificates-page input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+#certificates-page .content #form-certificates-page label, #certificates-page .content #form-certificates-page legend {
+  font-size: 1.4rem;
+  line-height: 16px;
+  color: #767676;
+  margin-bottom: 4px;
+}
+
+#certificates-page .content #form-certificates-page input {
+  padding: 11px 38px 11px 12px;
+  border: 2px solid #aaaaaa;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  line-height: 18px;
+  height: 40px;
+}
+
+#certificates-page .content #form-certificates-page input:focus {
+  outline-color: #aaaaaa;
+}
+
+#certificates-page .content #form-certificates-page input:focus + i.icon-error {
+  visibility: hidden;
+}
+
+#certificates-page .content #form-certificates-page input:focus ~ span.message-error {
+  visibility: hidden;
+}
+
+#certificates-page .content #form-certificates-page input::-webkit-input-placeholder {
+  color: #767676;
+  width: 95%;
+}
+
+#certificates-page .content #form-certificates-page input:-ms-input-placeholder {
+  color: #767676;
+  width: 95%;
+}
+
+#certificates-page .content #form-certificates-page input::-ms-input-placeholder {
+  color: #767676;
+  width: 95%;
+}
+
+#certificates-page .content #form-certificates-page input::placeholder {
+  color: #767676;
+  width: 95%;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container {
+  margin-bottom: 18px;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container .fa-heart {
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 36px;
+  left: 94%;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container .fa-heart:hover {
+  color: #074ee8;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container .fa-heart:active:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transition: none;
+  transition: none;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container .fa-heart:last-of-type {
+  color: #074ee8;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container .fa-trash {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 36px;
+  left: 2%;
+  color: #074ee8;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .more-input-certificate {
+  margin-top: -22px;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .more-input-certificate input {
+  padding-left: 34px;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .more-input-certificate label {
+  visibility: hidden;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .more-input-certificate .fa-trash {
+  display: block;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .more-input-certificate .fa-trash:hover {
+  color: #053db7;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .more-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: -15px;
+  margin-bottom: 48px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .more-container #more-certificate-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  font-size: 1.6rem;
+  background-color: #074ee8;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  line-height: 18px;
+  width: 110px;
+  height: 40px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .more-container #more-certificate-btn:hover {
+  background-color: #053db7;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .more-container #more-certificate-btn i {
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .more-container span:not(.not-absolute) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  visibility: hidden;
+  position: relative;
+  pointer-events: none;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .more-container span:not(.not-absolute) > i {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 94.5%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .more-container span.message-error-limiter {
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 11px 12px;
+  background-color: #db5a5a;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  line-height: 18px;
+  height: 40px;
+  color: #ffffff;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .more-container span.message-error-limiter > i {
+  visibility: visible;
+  pointer-events: all;
+  top: 11px;
+  left: 93%;
+  position: absolute;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .more-container span.message-error-limiter > i:hover {
+  pointer-events: all;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  margin-left: -2px;
+}
+
+@media (max-width: 720px) {
+  #certificates-page .content #form-certificates-page .user-info-container .more-container span.message-error-limiter > i {
+    left: 91%;
+  }
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .input-error {
+  border-color: #ff0225;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container i:not(.not-absolute) {
+  visibility: visible;
+  position: absolute;
+  left: 94%;
+  top: 36px;
+  width: 20px;
+  height: 20px;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container i:not(.not-absolute)#ierror-certificate {
+  left: 88.5%;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container i.icon-error {
+  visibility: visible;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container span:not(.not-absolute) {
+  visibility: hidden;
+  font-size: 1.4rem;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container span.message-error {
+  visibility: visible;
+  color: #ff0221;
+}
+
+#certificates-page .content #form-certificates-page .finish-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#certificates-page .content #form-certificates-page .finish-container #finish-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 13px;
+  font-size: 1.6rem;
+  background-color: #074ee8;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  line-height: 18px;
+  width: 90px;
+  height: 40px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#certificates-page .content #form-certificates-page .finish-container #finish-button:hover {
+  background-color: #053db7;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

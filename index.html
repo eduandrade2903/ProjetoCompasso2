@@ -129,51 +129,48 @@
 
 
     <section class="page" id="social-page">
-        <header>
-            <div class="title">
-                <h2>
-                    Team Sign Up
-                </h2>
-            </div>
-
-            <nav class="nav-bar" id="nav-bar-page2">
-                <ul>
-                    <li class="item">Basic</li>
-                    <li class="item">Social</li>
-                    <li class="item">Certificates</li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <form action="" id="form-social-page">
-                <div class="user-social-container">
-                    <div class="linkedin-container">
-                        <label for="input-linkedin">LinkeDIn</label>
-                        <input type="text" name="linkedin" id="input-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                        
-                        <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                        <span class="message-error" id="error-linkedin">teste de mensagem de erro</span>
-                    </div>
-
-
-                    <div class="github-container">
-                        <label for="input-github">Github*</label>
-                        <input type="text" name="github" id="input-github" placeholder="https://github.com/foobar">
-                        
-                        <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                        <span class="message-error" id="error-github">teste de mensagem de erro</span>
-                    </div>
+        <div class="content">
+            <header>
+                <div class="title">
+                    <h2>
+                        Team Sign Up
+                    </h2>
                 </div>
-
-                <div class="finish-container">
-                    <button id="next-button">
-                        <span>Next</span>
-                        <i class="fa-solid fa-angle-right"></i>
-                    </button>
-                </div>
-            </form>
-        </main>
+                <nav class="nav-bar" id="nav-bar-page2">
+                    <ul>
+                        <li class="item">Basic</li>
+                        <li class="item">Social</li>
+                        <li class="item">Certificates</li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <form action="" id="form-social-page">
+                    <div class="user-social-container">
+                        <div class="linkedin-container">
+                            <label for="input-linkedin">LinkeDIn</label>
+                            <input type="text" name="linkedin" id="input-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+            
+                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-linkedin">teste de mensagem de erro</span>
+                        </div>
+                        <div class="github-container">
+                            <label for="input-github">Github*</label>
+                            <input type="text" name="github" id="input-github" placeholder="https://github.com/foobar">
+            
+                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-github">teste de mensagem de erro</span>
+                        </div>
+                    </div>
+                    <div class="finish-container">
+                        <button id="next-button">
+                            <span>Next</span>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </main>
+        </div>
     </section>
     
 
@@ -183,84 +180,97 @@
 
 
     <section class="page" id="certificates-page">
-        <header>
-            <div class="title">
-                <h2>
-                    Team Sign Up
-                </h2>
-            </div>
+        <div class="content">
+            <header>
+                <div class="title">
+                    <h2>
+                        Team Sign Up
+                    </h2>
+                </div>
+                <nav class="nav-bar" id="nav-bar-page3">
+                    <ul>
+                        <li class="item">Basic</li>
+                        <li class="item">Social</li>
+                        <li class="item">Certificates</li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <form action="" id="form-certificates-page">
+                    <div class="user-info-container">
+                        <div class="all-certificates-container">
+                            <div class="certificate-container">
+                                <label for="input-certificates">Certificates</label>
+                                <input class="input-error" type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
 
-            <nav class="nav-bar" id="nav-bar-page3">
-                <ul>
-                    <li class="item">Basic</li>
-                    <li class="item">Social</li>
-                    <li class="item">Certificates</li>
-                </ul>
-            </nav>
-        </header>
+                                <i class="icon-error" id="ierror-certificate"><img src="src/icons/error-icon.svg" alt=""></i>
+                                <span class="message-error" id="error-certificate">teste de mensagem de erro</span>
 
-        <main>
-            <form action="" id="form-certificate-page">
-                <div class="user-info-container">
-                    <div class="certificates-container">
-                        <label for="input-certificates">Certificates</label>
-                        <input type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                        
-                        <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                        <span class="message-error" id="error-certificate">teste de mensagem de erro</span>
+                                <i class="fa-regular fa-heart" id="inactive-heart-icon"></i>
+                                <i class="fa-regular fa-heart hidden" id="active-heart-icon"></i>
 
-                        <i class="fa-regular fa-heart" id="regular-heart-icon"></i>
-                        <i class="fa-solid fa-heart" id="solid-heart-icon"></i>
+                                <i class="fa-solid fa-trash" id="trash-icon"></i>
+                            
+                            </div>
 
-                        <div class="certificate-limiter"></div>
+                            <div class="certificate-container more-input-certificate">
+                                <label for="input-certificates">Certificates</label>
+                                <input class="input-error"type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                                <i class="icon-error" id="ierror-certificate"><img src="src/icons/error-icon.svg" alt=""></i>
+                                <span class="message-error" id="error-certificate">teste de mensagem de erro</span>
+                                <i class="fa-regular fa-heart" id="inactive-heart-icon"></i>
+                                <i class="fa-regular fa-heart hidden" id="active-heart-icon"></i>
+                                <i class="fa-solid fa-trash" id="trash-icon"></i>
+                            
+                            </div>
+                        </div>
 
                         <div class="more-container">
+                            
+                            <span class="message-error-limiter" id="error-limiter-certificate">Insert only 5 certificates! <i class="fa-solid fa-circle-xmark"></i></span>
+                            
+
                             <button id="more-certificate-btn">
-                                <i class="fa-solid fa-plus"></i>
-                                <span>More</span>
-                                <i class="fa-solid fa-angle-right"></i>
+                                <i class="fa-solid fa-plus not-absolute"></i>
+                                <span class="not-absolute">More</span>
+                                <i class="fa-solid fa-angle-right not-absolute"></i>
                             </button>
                         </div>
-                    </div>
-         
-                    <div class="bottom-container">
+                        
                         <div class="team-name-container">
                             <label for="input-team-name">Team Name *</label>
-                            <input type="text" name="team-name" id="input-team-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                            
+                            <input class="input-error type="text" name="team-name" id="input-team-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+        
                             <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
                             <span class="message-error" id="error-team-name">teste de mensagem de erro</span>
                         </div>
 
-
                         <div class="institution-container">
                             <label for="input-institution">Institution *</label>
-                            <input type="text" name="institution" id="input-institution" placeholder="Universidade Federal da Paraíba">
-
+                            <input class="input-error" type="text" name="institution" id="input-institution" placeholder="Universidade Federal da Paraíba">
                             <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
                             <span class="message-error" id="error-institution">teste de mensagem de erro</span>
                         </div>
 
-                        <div class="gaduation-container">
+                        <div class="graduation-container">
                             <label for="input-graduation">Graduation *</label>
-                            <input type="text" name="graduation" id="input-graduation" placeholder="Ciências da Computação">
-
+                            <input class="input-error" type="text" name="graduation" id="input-graduation" placeholder="Ciências da Computação">
                             <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
                             <span class="message-error" id="error-graduation">teste de mensagem de erro</span>
                         </div>
                     </div>
-                </div>
 
-                <div class="finish-container">
-                    <a href="user-results.index.html" id="finish-button">
-                        <button id="finish-button">
+
+
+                    <div class="finish-container">
+                        <a href="user-results.index.html" id="finish-button">
                             <i class="fa-solid fa-check"></i>
                             <span>Finish</span>
-                        </button>
-                    </a>
-                </div>
-            </form>
-        </main>
+                        </a>
+                    </div>
+                </form>
+            </main>
+        </div>
     </section>
 
 
@@ -271,7 +281,7 @@
     <script>
         var page1 = false;
         var page2 = true;
-        var page3 = true;
+        var page3 = false;
 
         if (page1 == true){
             let sectionBasic = document.querySelector('#basic-page');
@@ -287,6 +297,7 @@
             let sectionCertificates = document.querySelector('#certificates-page');
             sectionCertificates.classList.add('hidden')
         }
+
         (function(){
             let start_year = 2010;
             let html ='';
