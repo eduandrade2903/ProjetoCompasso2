@@ -1,1 +1,182 @@
 @import '../../../abstract/global';
+
+#social-page{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+
+    .content{
+        // background-color: rgb(164, 206, 255);
+        max-width: 620px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+        padding: 45px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 20px;
+
+        header{
+            width: 100%;
+            justify-content: start;
+            
+            .title{
+                font-family: $title-font;
+                font-size: 1.8rem;
+                font-weight: 600;
+                margin-bottom: 33px;
+            }
+
+            ul{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                padding-left: unset;
+
+                li{
+                    font-size: 1.6rem;
+                    line-height: 18px;
+                    font-weight: 400;
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 44px;
+                    color: $primary-color;
+                    border-bottom: 2px solid #aaaaaa;
+
+                    &:nth-child(2){
+                        border-bottom: 3px solid $primary-color;
+                        border-bottom-right-radius: 1px;
+                        border-bottom-left-radius: 1px;
+                    }
+                }
+            }
+        }
+
+        #form-social-page{
+            display: flex;
+            flex-direction: column;
+            row-gap: 267px;
+
+            label, input{
+                flex: 1 1 100%;
+            }
+
+            label, legend{
+                font-size: 1.4rem;
+                line-height: 16px;
+                color: #767676;
+                margin-bottom: 4px;
+            }
+
+            input{
+                padding: 11px 12px;
+                border: 2px solid #aaaaaa;
+                border-radius: 4px;
+                font-size: 1.6rem;
+                line-height: 18px;
+                height: 40px;
+
+                &:focus{
+                    outline-color: #aaaaaa;
+
+                    + .icon-error{
+                        visibility: hidden;
+                    }
+
+                    ~ .message-error {
+                        visibility: hidden;
+                    }
+                }
+
+                &::placeholder{
+                    color: #767676;
+                    width: 90%;
+                }
+
+            }
+
+            .user-social-container{
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+
+                .linkedin-container, .github-container{
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1 1 100%;
+                    margin-bottom: 12px;
+                    position: relative;
+                }
+
+                // ------------informações de erro--------------
+
+                .input-error{
+                    border-color: #ff0225;
+
+                }
+                
+
+                i{
+                    visibility: hidden;
+                    position: absolute;
+                    left: 92%;
+                    top: 36px;
+                    width: 20px;
+                    height: 20px;
+                    
+                }
+
+                .icon-error{
+                    visibility: visible;
+                }
+
+                span{
+                    visibility: hidden;
+                    font-size: 1.4rem;
+                }
+
+                .message-error{
+                    visibility: visible;
+                    color: #ff0221;
+                }
+
+
+            }
+
+                .finish-container{
+                    display: flex;
+                    flex: 1 1 100%;
+                    justify-content: end;
+
+                    #next-button{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px;
+                        font-size: 1.6rem;
+                        background-color: $primary-color;
+                        border: none;
+                        border-radius: 4px;
+                        color: #ffffff;
+                        line-height: 18px;
+                        width: 81px;
+                        height: 40px;
+                        transition: .2s ease-in-out;
+
+                        &:hover{
+                            background-color: #053db7;
+                            transition: .2s ease-in-out;
+                        }
+
+                        i{
+                            margin-top: 3px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+        }
+    }
+}

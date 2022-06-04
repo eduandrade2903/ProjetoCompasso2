@@ -124,7 +124,7 @@
 
 
 
-
+    
 
 
 
@@ -144,24 +144,27 @@
                     </ul>
                 </nav>
             </header>
+            
             <main>
                 <form action="" id="form-social-page">
                     <div class="user-social-container">
                         <div class="linkedin-container">
-                            <label for="input-linkedin">LinkeDIn</label>
-                            <input type="text" name="linkedin" id="input-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-            
+                            <label for="input-linkedin">LinkedIn</label>
+                            <input type="text" name="linkedin" id="input-name" class="input-error" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                            
                             <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
                             <span class="message-error" id="error-linkedin">teste de mensagem de erro</span>
                         </div>
+
+
                         <div class="github-container">
                             <label for="input-github">Github*</label>
-                            <input type="text" name="github" id="input-github" placeholder="https://github.com/foobar">
-            
+                            <input type="text" name="github" id="input-github" class="input-error" placeholder="https://github.com/foobar">
                             <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
                             <span class="message-error" id="error-github">teste de mensagem de erro</span>
                         </div>
                     </div>
+
                     <div class="finish-container">
                         <button id="next-button">
                             <span>Next</span>
@@ -280,7 +283,7 @@
 
     <script>
         var page1 = false;
-        var page2 = true;
+        var page2 = false;
         var page3 = false;
 
         if (page1 == true){

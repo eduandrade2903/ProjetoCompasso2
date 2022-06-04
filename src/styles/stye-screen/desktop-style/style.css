@@ -505,6 +505,250 @@ h2, p, nav, ul, li, label, #age-result {
   display: none !important;
 }
 
+#social-page {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 45px;
+}
+
+#social-page .content {
+  max-width: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 35px;
+  padding: 45px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+}
+
+#social-page .content header {
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+#social-page .content header .title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 33px;
+}
+
+#social-page .content header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: unset;
+}
+
+#social-page .content header ul li {
+  font-size: 1.6rem;
+  line-height: 18px;
+  font-weight: 400;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 44px;
+  color: #074ee8;
+  border-bottom: 2px solid #aaaaaa;
+}
+
+#social-page .content header ul li:nth-child(2) {
+  border-bottom: 3px solid #074ee8;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+}
+
+#social-page .content #form-social-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 267px;
+}
+
+#social-page .content #form-social-page label, #social-page .content #form-social-page input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+#social-page .content #form-social-page label, #social-page .content #form-social-page legend {
+  font-size: 1.4rem;
+  line-height: 16px;
+  color: #767676;
+  margin-bottom: 4px;
+}
+
+#social-page .content #form-social-page input {
+  padding: 11px 12px;
+  border: 2px solid #aaaaaa;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  line-height: 18px;
+  height: 40px;
+}
+
+#social-page .content #form-social-page input:focus {
+  outline-color: #aaaaaa;
+}
+
+#social-page .content #form-social-page input:focus + .icon-error {
+  visibility: hidden;
+}
+
+#social-page .content #form-social-page input:focus ~ .message-error {
+  visibility: hidden;
+}
+
+#social-page .content #form-social-page input::-webkit-input-placeholder {
+  color: #767676;
+  width: 90%;
+}
+
+#social-page .content #form-social-page input:-ms-input-placeholder {
+  color: #767676;
+  width: 90%;
+}
+
+#social-page .content #form-social-page input::-ms-input-placeholder {
+  color: #767676;
+  width: 90%;
+}
+
+#social-page .content #form-social-page input::placeholder {
+  color: #767676;
+  width: 90%;
+}
+
+#social-page .content #form-social-page .user-social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+#social-page .content #form-social-page .user-social-container .linkedin-container, #social-page .content #form-social-page .user-social-container .github-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+#social-page .content #form-social-page .user-social-container .input-error {
+  border-color: #ff0225;
+}
+
+#social-page .content #form-social-page .user-social-container i {
+  visibility: hidden;
+  position: absolute;
+  left: 92%;
+  top: 36px;
+  width: 20px;
+  height: 20px;
+}
+
+#social-page .content #form-social-page .user-social-container .icon-error {
+  visibility: visible;
+}
+
+#social-page .content #form-social-page .user-social-container span {
+  visibility: hidden;
+  font-size: 1.4rem;
+}
+
+#social-page .content #form-social-page .user-social-container .message-error {
+  visibility: visible;
+  color: #ff0221;
+}
+
+#social-page .content #form-social-page .finish-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#social-page .content #form-social-page .finish-container #next-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  font-size: 1.6rem;
+  background-color: #074ee8;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  line-height: 18px;
+  width: 81px;
+  height: 40px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#social-page .content #form-social-page .finish-container #next-button:hover {
+  background-color: #053db7;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#social-page .content #form-social-page .finish-container #next-button i {
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
 html {
   font-family: "Nunito", sans-serif;
   font-size: 62.5%;
