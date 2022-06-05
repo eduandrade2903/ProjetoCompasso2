@@ -271,12 +271,16 @@
 
 
 
+
+    
+
     <!-- Script local -->
 
     <script>
-        var page1 = false;
-        var page2 = false;
+        var page1 = true;
+        var page2 = true;
         var page3 = false;
+        var page4 = false;
 
         if (page1 == true){
             let sectionBasic = document.querySelector('#basic-page');
@@ -291,6 +295,11 @@
         if (page3 == true){
             let sectionCertificates = document.querySelector('#certificates-page');
             sectionCertificates.classList.add('hidden')
+        }
+
+        if (page4 == true){
+            let sectionBasic = document.querySelector('#results-page');
+            sectionBasic.classList.add('hidden')
         }
 
         (function(){
