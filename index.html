@@ -4,80 +4,325 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>team project</title>
+    <link rel="stylesheet" href="src/styles/abstract/reset.css">
+    <link rel="stylesheet" href="src/styles/stye-screen/desktop-style/style.css">
+    <link rel="stylesheet" href="src/styles/stye-screen/responsive.style/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <h1>Titulo Pagina</h1>
-    </header>
 
-    <div class="container">
-
- 
-            <div class="page1"><hr><p>Texto 1</p>
-                <label for="nome">Nome:</label>
-                <input type="text" class="nome">
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text" class="sobrenome">
-                <h1>teste</h1>
-                <button type="submit" class="button1"  disabled="disabled">Enviar</button>
-                
-
-                <div class="mostra"></div>
-            </div>
-
-
-
-            <div class="page2"><hr><p>Texto 2</p>
-                <label for="telefone">telefone:</label>
-                <input type="text" class="telefone">
-                <button class='botao1' onclick="changePage3()">Muda</button>
-                <button class='button2'  disabled="disabled" >mostra</button>
-                <button class='salva'>salva</button>
-            </div>
-
-
-            <div class="page3"><p>Texto 3</p>
-            
-                <h1>teste</h1>
-                <button type="submit" class="botao3" onclick="" >Recuperar Dados</button>
-
-                <div>
-                   <table class="tabela">
-                       <thead>
-                           <tr>
-                               <td>Nome</td>
-                               <td>Sobrenome</td>
-                           </tr>                           
-                       </thead>
-                       <tbody class="tabela-body">
-
-                       </tbody>
-
-                       <table class="tabela">
-                        <hr>
-                        <thead>
-                            <tr>
-                                <td>Telefone:</td>
-                                
-                            </tr>                           
-                        </thead>
-                        <tbody class="tabela-body2">
- 
-                        </tbody>
- 
-
-                   </table>
+    <section class="page" id="basic-page">
+        <div class="content">
+            <header>
+                <div class="title">
+                    <h2>
+                        Team Sign Up
+                    </h2>
                 </div>
-            </div>
+                <nav class="nav-bar" id="nav-bar-page1">
+                    <ul>
+                        <li class="item">Basic</li>
+                        <li class="item" id="item-social">Social</li>
+                        <li class="item">Certificates</li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <form action="" id="form-basic-page">
+                    <div class="user-info-container">
+                        <div class="name-container">
+                            <label for="input-name">Full name *</label>
+                            <input class="" type="text" name="full-name" id="input-name" placeholder="Foo Bar">
+            
+                            <i class="" id="ierror-name"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="" id="error-name">teste de mensagem de erro</span>
+                        </div>
+                        <div class="nickname-container">
+                            <label for="input-nickname">Nickname</label>
+                            <input class="" type="text" name="nickname" id="input-nickname" placeholder="Juanito">
 
-    </div>
+                            <i class=""><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="" id="error-nickname">teste de mensagem de erro</span>
+                        </div>
+                        <div class="horizontal-inputs">
+                            <div class="email-container">
+                                <label for="input-email">Email *</label>
+                                <input class="" type="email" name="email" id="input-email" placeholder="foo@bar.com" class="denial">
 
-    <script src="js/page1.js"></script>
-    <script src="js/page2.js"></script>
-    <script src="js/page3.js"></script>
+                                <i class="" id="ierror-email"><img src="src/icons/error-icon.svg" alt=""></i>
+                                <span class="" id="error-email">teste de mensagem de erro</span>
+                            </div>
+                            <div class="phone-container">
+                                <label for="input-tel">Phone</label>
+                                <input class=""type="tel" name="telephone" id="input-tel" placeholder="(83) 00000-0000" class="denial">
 
+                                <i class="exception-phone" id="ierror-phone"><img src="src/icons/error-icon.svg" alt=""></i>
+                                <span class="" id="error-phone">teste de mensagem de erro</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-birthday-container">
+                        <h3>Birthday *</h3>
+                        <div class="date-birthday">
+                            <div class="day-container">
+                                <label for="selection-days">Day</label>
+                                <select name="days" id="selection-days"></select>
+
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </div>
+
+                            <div class="month-container">
+                                <label for="selection-months">Month</label>
+                                <select name="months" id="selection-months"></select>
+
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </div>
+                            
+                            <div class="year-container">
+                                <label for="selection-years">Year</label>
+                                <select name="years" id="selection-years"></select>
+
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </div>
+                            <div class="age-container">
+                                <legend>Age</legend>
+                                <div id="age-result">
+                                    <span id="text-age-result"></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="terms-container">
+                            <input type="checkbox" name="terms" id="check-terms" value="true">
+
+                            <label for="check-terms">
+                                I accept the terms and privacy
+                            </label>
+                        </div>
+                        
+                        <div class="next-container">
+                            <button id="next-button-page1">
+                                <span>Next</span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="page" id="social-page">
+        <div class="content">
+            <header>
+                <div class="title">
+                    <h2>
+                        Team Sign Up
+                    </h2>
+                </div>
+                <nav class="nav-bar" id="nav-bar-page2">
+                    <ul>
+                        <li class="item" id="item-basic">Basic</li>
+                        <li class="item">Social</li>
+                        <li class="item" id="item-certificates">Certificates</li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main>
+                <form action="" id="form-social-page">
+                    <div class="user-social-container">
+                        <div class="linkedin-container">
+                            <label for="input-linkedin">LinkedIn</label>
+                            <input type="text" name="linkedin" id="input-linkedin" class="input-error" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                            
+                            <i class="icon-error" id="ierror-linkedin"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-linkedin">teste de mensagem de erro</span>
+                        </div>
+
+
+                        <div class="github-container">
+                            <label for="input-github">Github*</label>
+                            <input type="text" name="github" id="input-github" class="input-error" placeholder="https://github.com/foobar">
+                            <i class="icon-error" id="ierror-git"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-github">teste de mensagem de erro</span>
+                        </div>
+                    </div>
+
+                    <div class="finish-container">
+                        <button id="next-button-page2">
+                            <span>Next</span>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </section>
     
+
+
+
+
+
+
+    <section class="page" id="certificates-page">
+        <div class="content">
+            <header>
+                <div class="title">
+                    <h2>
+                        Team Sign Up
+                    </h2>
+                </div>
+                <nav class="nav-bar" id="nav-bar-page3">
+                    <ul>
+                        <li class="item" id="item-basic">Basic</li>
+                        <li class="item" id="item-social-page3">Social</li>
+                        <li class="item">Certificates</li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <form action="" id="form-certificates-page">
+                    <div class="user-info-container">
+                        <div class="all-certificates-container">
+                            <div class="certificate-container">
+                                <label for="input-certificates">Certificates</label>
+                                <input class="input-error" type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+
+                                <i class="icon-error" id="ierror-certificate"><img src="src/icons/error-icon.svg" alt=""></i>
+                                <span class="message-error" id="error-certificate">teste de mensagem de erro</span>
+
+                                <i class="fa-regular fa-heart" id="inactive-heart-icon"></i>
+                                <i class="fa-regular fa-heart hidden" id="active-heart-icon"></i>
+
+                                <i class="fa-solid fa-trash" id="trash-icon"></i>
+                            
+                            </div>
+
+                            <div class="certificate-container more-input-certificate">
+                                <label for="input-certificates">Certificates</label>
+                                <input class="input-error"type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                                <i class="icon-error" id="ierror-certificate"><img src="src/icons/error-icon.svg" alt=""></i>
+                                <span class="message-error" id="error-certificate">teste de mensagem de erro</span>
+                                <i class="fa-regular fa-heart" id="inactive-heart-icon"></i>
+                                <i class="fa-regular fa-heart hidden" id="active-heart-icon"></i>
+                                <i class="fa-solid fa-trash" id="trash-icon"></i>
+                            
+                            </div>
+                        </div>
+
+                        <div class="more-container">
+                            
+                            <span class="message-error-limiter" id="error-limiter-certificate">Insert only 5 certificates! <i class="fa-solid fa-circle-xmark"></i></span>
+                            
+
+                            <button id="more-certificate-btn">
+                                <i class="fa-solid fa-plus not-absolute"></i>
+                                <span class="not-absolute">More</span>
+                                <i class="fa-solid fa-angle-right not-absolute"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="team-name-container">
+                            <label for="input-team-name">Team Name *</label>
+                            <input class="input-error type="text" name="team-name" id="input-team-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+        
+                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-team-name">teste de mensagem de erro</span>
+                        </div>
+
+                        <div class="institution-container">
+                            <label for="input-institution">Institution *</label>
+                            <input class="input-error" type="text" name="institution" id="input-institution" placeholder="Universidade Federal da Paraíba">
+                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-institution">teste de mensagem de erro</span>
+                        </div>
+
+                        <div class="graduation-container">
+                            <label for="input-graduation">Graduation *</label>
+                            <input class="input-error" type="text" name="graduation" id="input-graduation" placeholder="Ciências da Computação">
+                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-graduation">teste de mensagem de erro</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="finish-container">
+                        <a href="user-results.index.html" id="finish-button">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Finish</span>
+                        </a>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </section>
+
+
+
+
+    <!-- Script local -->
+
+    <script>
+       
+        (function(){
+           
+            let start_year = 2010;
+            let html = '<option value="">-</option>';
+            for (let i = start_year; i > start_year - 61; i--) {
+            html += '<option value="'+i+'">'+i+'</option>';
+            }
+            document.getElementById("selection-years").innerHTML = html;
+        })();
+        (function(){
+            let start_month = 1;
+            let html ='<option value="">-</option>';
+            for (let i = start_month; i < start_month + 12; i++) {
+            html += '<option value="'+i+'">'+i+'</option>';
+            }
+            console.log(html);
+            document.getElementById("selection-months").innerHTML = html;
+        })();
+        (function(){
+            let start_day = 1;
+            let html ='<option value="">-</option>';
+            for (let i = start_day; i < start_day + 31; i++) {
+            html += '<option value="'+i+'">'+i+'</option>';
+            }
+            console.log(html);
+            document.getElementById("selection-days").innerHTML = html;
+        })();
+    </script>
+    
+    <!-- Frameworks -->
+
+    <script src="https://kit.fontawesome.com/5d2396c788.js" crossorigin="anonymous"></script> <!--fontAwesome-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> <!--fontAwesome-->
+
+    <!-- Arquivos JS do projeto -->
+
+    <script src="javascript/page1.js"></script>
+    <script src="javascript/page2.js"></script>
+    <script src="javascript/page3.js"></script>
+
 </body>
 </html>

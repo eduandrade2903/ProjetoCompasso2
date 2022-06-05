@@ -1,0 +1,27 @@
+@import 'variables';
+
+html{
+    font-family: $primary-font;
+    font-size: 62.5%;
+    width: 100vw;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+h2, p, nav, ul, li, label, #age-result{
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+    -khtml-user-select: none;     
+    -moz-user-select: none;       
+    -ms-user-select: none;        
+    user-select: none;            
+}
+
+
+.hidden{
+    display: none !important;
+}
+
