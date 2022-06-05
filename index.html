@@ -97,7 +97,7 @@
                             <div class="age-container">
                                 <legend>Age</legend>
                                 <div id="age-result">
-                                    <span id="text-age-result">00</span>
+                                    <span id="text-age-result"></span>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                         </div>
                         
                         <div class="next-container">
-                            <button id="next-button">
+                            <button class="basic-next-button empty-data" id="basic-next-button">
                                 <span>Next</span>
                                 <i class="fa-solid fa-angle-right"></i>
                             </button>
@@ -150,23 +150,24 @@
                     <div class="user-social-container">
                         <div class="linkedin-container">
                             <label for="input-linkedin">LinkedIn</label>
-                            <input type="text" name="linkedin" id="input-name" class="input-error" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                            <input type="text" name="linkedin" id="input-name" class="" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
                             
-                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="message-error" id="error-linkedin">teste de mensagem de erro</span>
+                            <i class=""><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="" id="error-linkedin">teste de mensagem de erro</span>
                         </div>
 
 
                         <div class="github-container">
                             <label for="input-github">Github*</label>
-                            <input type="text" name="github" id="input-github" class="input-error" placeholder="https://github.com/foobar">
-                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="message-error" id="error-github">teste de mensagem de erro</span>
+                            <input type="text" name="github" id="input-github" class="" placeholder="https://github.com/foobar">
+
+                            <i class=""><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="" id="error-github">teste de mensagem de erro</span>
                         </div>
                     </div>
 
                     <div class="finish-container">
-                        <button id="next-button">
+                        <button class="social-next-button empty-data" id="social-next-button">
                             <span>Next</span>
                             <i class="fa-solid fa-angle-right"></i>
                         </button>
@@ -204,25 +205,14 @@
                         <div class="all-certificates-container">
                             <div class="certificate-container">
                                 <label for="input-certificates">Certificates</label>
-                                <input class="input-error" type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                                <input class="" type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
 
-                                <i class="icon-error" id="ierror-certificate"><img src="src/icons/error-icon.svg" alt=""></i>
-                                <span class="message-error" id="error-certificate">teste de mensagem de erro</span>
+                                <i class="" id="ierror-certificate"><img src="src/icons/error-icon.svg" alt=""></i>
+                                <span class="" id="error-certificate">teste de mensagem de erro</span>
 
-                                <i class="fa-regular fa-heart" id="inactive-heart-icon"></i>
-                                <i class="fa-regular fa-heart hidden" id="active-heart-icon"></i>
+                                <i class="fa-regular fa-heart inactive-heart-icon not-absolute" id="inactive-heart-icon"></i>
+                                <i class="fa-regular fa-heart active-heart-icon .not-absolute hidden" id="active-heart-icon"></i>
 
-                                <i class="fa-solid fa-trash" id="trash-icon"></i>
-                            
-                            </div>
-
-                            <div class="certificate-container more-input-certificate">
-                                <label for="input-certificates">Certificates</label>
-                                <input class="input-error"type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                                <i class="icon-error" id="ierror-certificate"><img src="src/icons/error-icon.svg" alt=""></i>
-                                <span class="message-error" id="error-certificate">teste de mensagem de erro</span>
-                                <i class="fa-regular fa-heart" id="inactive-heart-icon"></i>
-                                <i class="fa-regular fa-heart hidden" id="active-heart-icon"></i>
                                 <i class="fa-solid fa-trash" id="trash-icon"></i>
                             
                             </div>
@@ -230,7 +220,7 @@
 
                         <div class="more-container">
                             
-                            <span class="message-error-limiter" id="error-limiter-certificate">Insert only 5 certificates! <i class="fa-solid fa-circle-xmark"></i></span>
+                            <span class="" id="error-limiter-certificate">Insert only 5 certificates! <i class="fa-solid fa-circle-xmark" id="close-error-limiter"></i></span>
                             
 
                             <button id="more-certificate-btn">
@@ -242,34 +232,36 @@
                         
                         <div class="team-name-container">
                             <label for="input-team-name">Team Name *</label>
-                            <input class="input-error type="text" name="team-name" id="input-team-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                            <input class="" type="text" name="team-name" id="input-team-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
         
-                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="message-error" id="error-team-name">teste de mensagem de erro</span>
+                            <i class=""><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="" id="error-team-name">teste de mensagem de erro</span>
                         </div>
 
                         <div class="institution-container">
                             <label for="input-institution">Institution *</label>
-                            <input class="input-error" type="text" name="institution" id="input-institution" placeholder="Universidade Federal da Paraíba">
-                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="message-error" id="error-institution">teste de mensagem de erro</span>
+                            <input class="" type="text" name="institution" id="input-institution" placeholder="Universidade Federal da Paraíba">
+
+                            <i class=""><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="" id="error-institution">teste de mensagem de erro</span>
                         </div>
 
                         <div class="graduation-container">
                             <label for="input-graduation">Graduation *</label>
-                            <input class="input-error" type="text" name="graduation" id="input-graduation" placeholder="Ciências da Computação">
-                            <i class="icon-error"><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="message-error" id="error-graduation">teste de mensagem de erro</span>
+                            <input class="" type="text" name="graduation" id="input-graduation" placeholder="Ciências da Computação">
+
+                            <i class=""><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="" id="error-graduation">teste de mensagem de erro</span>
                         </div>
                     </div>
 
 
 
                     <div class="finish-container">
-                        <a href="user-results.index.html" id="finish-button">
+                        <button class="finish-button empty-data" id="finish-button">
                             <i class="fa-solid fa-check"></i>
                             <span>Finish</span>
-                        </a>
+                        </button>
                     </div>
                 </form>
             </main>

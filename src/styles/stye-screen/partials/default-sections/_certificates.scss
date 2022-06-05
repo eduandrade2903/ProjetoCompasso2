@@ -37,6 +37,7 @@
                 justify-content: center;
                 padding-left: unset;
 
+                
                 li{
                     font-size: 1.6rem;
                     line-height: 18px;
@@ -48,6 +49,10 @@
                     height: 44px;
                     color: $primary-color;
                     border-bottom: 2px solid #aaaaaa;
+
+                    &:nth-of-type(n+1):nth-of-type(-n+2){
+                        cursor: pointer;
+                    }
 
                     &:last-child{
                         border-bottom: 3px solid $primary-color;
@@ -128,21 +133,24 @@
                             position: absolute;
                             top: 36px;
                             left: 94%;
-                            
 
-                            &:hover{
-                                color: $primary-color;
-                                transition: .2s ease-in-out;
-                            }
-
-                            &:active:hover{
+                            &:active{
                                 transform: scale(.97);
                                 transition: none;
                             }
+                        }
 
-                            &:last-of-type{
-                                color: $primary-color;
-                            }
+                        .inactive-heart-icon{
+                            color: #000000;
+                        }
+
+                        .inactive-heart-icon:hover{
+                            color: $primary-color;
+                            transition: .2s ease-in-out;
+                        }
+
+                        .active-heart-icon{
+                            color: $primary-color;
                         }
 
                         .fa-trash{
@@ -287,7 +295,7 @@
                 
 
                 i:not(.not-absolute){
-                    visibility: visible;
+                    visibility: hidden;
                     position: absolute;
                     left: 94%;
                     top: 36px;
@@ -323,7 +331,7 @@
                 flex: 1 1 100%;
                 justify-content: end;
 
-                #finish-button{
+                .finish-button{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -344,6 +352,16 @@
                     }
 
                     
+                }
+
+                .empty-data{
+                    background-color: #ffffff;
+                    color: $primary-color;
+                    border: 1px solid $primary-color;
+
+                    &:hover{
+                        background-color: #b8d0ff;
+                    }
                 }
             }
 

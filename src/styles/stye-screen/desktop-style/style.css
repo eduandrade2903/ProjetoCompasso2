@@ -448,7 +448,7 @@ h2, p, nav, ul, li, label, #age-result {
           justify-content: end;
 }
 
-#basic-page .content #form-basic-page .user-birthday-container .next-container #next-button {
+#basic-page .content #form-basic-page .user-birthday-container .next-container .basic-next-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,15 +471,25 @@ h2, p, nav, ul, li, label, #age-result {
   transition: .2s ease-in-out;
 }
 
-#basic-page .content #form-basic-page .user-birthday-container .next-container #next-button:hover {
+#basic-page .content #form-basic-page .user-birthday-container .next-container .basic-next-button:hover {
   background-color: #053db7;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
 
-#basic-page .content #form-basic-page .user-birthday-container .next-container #next-button i {
+#basic-page .content #form-basic-page .user-birthday-container .next-container .basic-next-button i {
   margin-top: 3px;
   margin-right: 5px;
+}
+
+#basic-page .content #form-basic-page .user-birthday-container .next-container .empty-data {
+  background-color: #ffffff;
+  color: #074ee8;
+  border: 1px solid #074ee8;
+}
+
+#basic-page .content #form-basic-page .user-birthday-container .next-container .empty-data:hover {
+  background-color: #b8d0ff;
 }
 
 html {
@@ -715,7 +725,7 @@ h2, p, nav, ul, li, label, #age-result {
           justify-content: end;
 }
 
-#social-page .content #form-social-page .finish-container #next-button {
+#social-page .content #form-social-page .finish-container .social-next-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -738,15 +748,25 @@ h2, p, nav, ul, li, label, #age-result {
   transition: .2s ease-in-out;
 }
 
-#social-page .content #form-social-page .finish-container #next-button:hover {
+#social-page .content #form-social-page .finish-container .social-next-button:hover {
   background-color: #053db7;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
 
-#social-page .content #form-social-page .finish-container #next-button i {
+#social-page .content #form-social-page .finish-container .social-next-button i {
   margin-top: 3px;
   margin-right: 5px;
+}
+
+#social-page .content #form-social-page .finish-container .empty-data {
+  background-color: #ffffff;
+  color: #074ee8;
+  border: 1px solid #074ee8;
+}
+
+#social-page .content #form-social-page .finish-container .empty-data:hover {
+  background-color: #b8d0ff;
 }
 
 html {
@@ -852,6 +872,10 @@ h2, p, nav, ul, li, label, #age-result {
   height: 44px;
   color: #074ee8;
   border-bottom: 2px solid #aaaaaa;
+}
+
+#certificates-page .content header ul li:nth-of-type(n+1):nth-of-type(-n+2) {
+  cursor: pointer;
 }
 
 #certificates-page .content header ul li:last-child {
@@ -974,20 +998,24 @@ h2, p, nav, ul, li, label, #age-result {
   left: 94%;
 }
 
-#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container .fa-heart:hover {
-  color: #074ee8;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-}
-
-#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container .fa-heart:active:hover {
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container .fa-heart:active {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
   -webkit-transition: none;
   transition: none;
 }
 
-#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container .fa-heart:last-of-type {
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container .inactive-heart-icon {
+  color: #000000;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container .inactive-heart-icon:hover {
+  color: #074ee8;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#certificates-page .content #form-certificates-page .user-info-container .all-certificates-container .certificate-container .active-heart-icon {
   color: #074ee8;
 }
 
@@ -1148,7 +1176,7 @@ h2, p, nav, ul, li, label, #age-result {
 }
 
 #certificates-page .content #form-certificates-page .user-info-container i:not(.not-absolute) {
-  visibility: visible;
+  visibility: hidden;
   position: absolute;
   left: 94%;
   top: 36px;
@@ -1186,7 +1214,7 @@ h2, p, nav, ul, li, label, #age-result {
           justify-content: end;
 }
 
-#certificates-page .content #form-certificates-page .finish-container #finish-button {
+#certificates-page .content #form-certificates-page .finish-container .finish-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1209,9 +1237,19 @@ h2, p, nav, ul, li, label, #age-result {
   transition: .2s ease-in-out;
 }
 
-#certificates-page .content #form-certificates-page .finish-container #finish-button:hover {
+#certificates-page .content #form-certificates-page .finish-container .finish-button:hover {
   background-color: #053db7;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
+}
+
+#certificates-page .content #form-certificates-page .finish-container .empty-data {
+  background-color: #ffffff;
+  color: #074ee8;
+  border: 1px solid #074ee8;
+}
+
+#certificates-page .content #form-certificates-page .finish-container .empty-data:hover {
+  background-color: #b8d0ff;
 }
 /*# sourceMappingURL=style.css.map */
