@@ -60,7 +60,7 @@ function validaLinkCertificate(){
     let padraoLink3 = /^[https]+:[//]+[www]+\.linkedin\.+[a-z]+[/]+in[/]+[a-z]/gi
     let padrao = inputCertificate.value;
     console.log(padrao);
-    if(padraolink.test(padrao)|| padraoLink2.test(padrao)|| padraoLink3.test(padrao)){
+    if(padraolink.test(padrao)|| padraoLink2.test(padrao)|| padraoLink3.test(padrao) || padrao.value == ''){
       errorCertificate.classList.remove('message-error');
       inputCertificate.classList.remove('input-error');
       ierrorCertificate.classList.remove('icon-error');
@@ -213,6 +213,8 @@ buttonFinish.addEventListener('click', (event) => {
         let validagrad = validaGraduation();
         let validacert = certificados.length;
 
+        console.log(validacert);
+
         if( validains && validalink && validagrad && validacert){
             team.push(inputTeamName.value, inputInstitution.value, inputGraduation.value);
             localStorage.setItem('certificatesData', JSON.stringify(certificados));
@@ -240,6 +242,7 @@ buttonFinish.addEventListener('click', (event) => {
 
             arrCertificates.forEach((certificado) => {
                 let c = document.createElement('span');
+                c.style.width = '80%';
                 c.textContent = certificado + '\n';
                 resultCertificates.appendChild(c);
             }
@@ -248,8 +251,13 @@ buttonFinish.addEventListener('click', (event) => {
 
             changePageResults();
             
-        }else {
+        }else{
+        }
+        if(validacert.length == 0){
             console.log('Faltam dados');
+            errorCertificate.classList.add('message-error');
+            inputCertificate.classList.add('input-error');
+            ierrorCertificate.classList.add('icon-error');
         }
     
 })

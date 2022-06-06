@@ -1,0 +1,132 @@
+@media (max-width: 620px) {
+
+    #certificates-page{
+        
+        .content{
+            
+            #form-certificates-page{
+
+                .user-info-container{
+
+                    .all-certificates-container{
+
+                        .certificate-container{
+
+                            .fa-heart{
+                                left: 93%;
+                            }
+                        }
+                    }
+
+                    i:not(.not-absolute){
+                        left: 92%;
+
+                        &#ierror-certificate{
+                            left: 87.5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+
+    #certificates-page{
+        
+        .content{
+            
+            header{
+
+                ul{
+                    
+                    li{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            #form-certificates-page{
+
+                .user-info-container{
+
+                    .all-certificates-container{
+
+                        .certificate-container{
+
+                            .fa-heart{
+                                left: 90%;
+                            }
+
+                            .fa-trash{
+                                left: 3%;
+                            }
+                        }
+                    }
+
+                    .more-container{
+                        flex-direction: column;
+                        row-gap: 10px;
+
+                        #more-certificate-btn{
+                            width: 100%;
+                        }
+
+                        span.message-error-limiter{
+                            order: 1;
+                            width: 100%;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                .user-info-container{
+        
+                    i:not(.not-absolute){
+                        left: 90%;
+
+                        &#ierror-certificate{
+                            left: 82.5%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 485px) {
+
+    #certificates-page{
+        
+        .content{
+            
+            #form-certificates-page{
+
+                .user-info-container{
+
+                    .all-certificates-container{
+
+                        .certificate-container{
+
+                            .fa-heart{
+                                left: 88%;
+                            }
+                        }
+                    }
+
+                    i:not(.not-absolute){
+                        left: 89%;
+
+                        &#ierror-certificate{
+                            left: 78.5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

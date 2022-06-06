@@ -35,7 +35,11 @@ let errorName = $('#error-name');
 let ierrorName = $('#ierror-name');
 
 function validaNome(){
-    if(fullName.value){
+    var padraoNome = /^[a-zA-Z\u00C0-\u00FF ]*$/gi;
+    let nome = fullName.value;
+    let valNome = padraoNome.test(nome);
+
+    if(fullName.value && valNome){
         fullName.classList.remove('input-error');
         errorName.classList.remove('message-error');
         ierrorName.classList.remove('icon-error');
@@ -49,10 +53,11 @@ function validaNome(){
 }
 
 fullName.addEventListener('keyup', ()=>{
-    if(email.value && birthDay.value && birthMonth.value && birthYear.value && check.checked){
+    if(email.value && birthDay.value && birthMonth.value && birthYear.value && check.checked && fullName.value){
         botao.classList.remove('empty-data');
     }else{
         botao.classList.add('empty-data');
+        console.log('vazio');
     }
     validaNome();
 });
@@ -80,8 +85,10 @@ function validadoEmail(){
 } 
 
 email.addEventListener("keyup", ()=>{
-    if(fullName.value && birthDay.value && birthMonth.value && birthYear.value && check.checked){
+    if(email.value && birthDay.value && birthMonth.value && birthYear.value && check.checked && fullName.value){
         botao.classList.remove('empty-data');
+    }else{
+        botao.classList.add('empty-data');
     }
     validadoEmail();
 });
@@ -140,8 +147,10 @@ function validaBirthDay(){
 }
 
 birthDay.addEventListener("click", ()=>{
-    if(fullName.value && email.value && birthMonth.value && birthYear.value && check.checked){
+    if(email.value && birthDay.value && birthMonth.value && birthYear.value && check.checked && fullName.value){
         botao.classList.remove('empty-data');
+    }else{
+        botao.classList.add('empty-data');
     }
     validaBirthDay();
 });
@@ -157,8 +166,10 @@ function validaBirthMonth(){
 }
 
 birthMonth.addEventListener("click", ()=>{
-    if(fullName.value && birthDay.value && email.value && birthYear.value && check.checked){
+    if(email.value && birthDay.value && birthMonth.value && birthYear.value && check.checked && fullName.value){
         botao.classList.remove('empty-data');
+    }else{
+        botao.classList.add('empty-data');
     }
 
     validaBirthMonth();
@@ -173,15 +184,19 @@ function validaBirthYear(){
 }
 
 birthYear.addEventListener("click", ()=>{
-    if(fullName.value && birthDay.value && birthMonth.value && email.value && check.checked){
+    if(email.value && birthDay.value && birthMonth.value && birthYear.value && check.checked && fullName.value){
         botao.classList.remove('empty-data');
+    }else{
+        botao.classList.add('empty-data');
     }
     validaBirthYear();
 });
 
 check.addEventListener('click', () => {
-    if(fullName.value && birthDay.value && birthMonth.value && email.value && birthYear.value){
+    if(email.value && birthDay.value && birthMonth.value && birthYear.value && check.checked && fullName.value){
         botao.classList.remove('empty-data');
+    }else{
+        botao.classList.add('empty-data');
     }
 })
 

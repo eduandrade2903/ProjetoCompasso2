@@ -18,8 +18,53 @@
                 }
             }
 
+            .user-birthday-container{
+                
+                .date-birthday{
+                    row-gap: 12px;
+                }
+            }
         }
 
 
     }
 }
+
+@media (max-width: 530px) {
+
+    #basic-page{
+        
+        .content{
+            
+            header{
+
+                ul{
+                    
+                    li{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            #form-basic-page{
+
+                .user-info-container{
+        
+                    i, .exception-email, .exception-phone{
+                        left: 88%;
+                    }
+                }
+            }
+
+            .user-birthday-container{
+                
+                .date-birthday{
+                    row-gap: 12px;
+                }
+            }
+        }
+
+
+    }
+}
+
