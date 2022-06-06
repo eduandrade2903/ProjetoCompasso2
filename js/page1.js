@@ -4,6 +4,7 @@ let $ = document.querySelector.bind(document);
 let page1 = $('#basic-page');
 let page2 = $('#social-page');
 let page3 = $('#certificates-page');
+let pageResult = $('#results-page');
 
 // Referência dos inputs e botões da page1
 let fullName = $('#input-name');
@@ -25,6 +26,7 @@ let navSocial = $('#item-social');
 
 page2.classList.add('hidden');
 page3.classList.add('hidden');
+pageResult.classList.add('hidden');
 
 
 // Validação Nome
@@ -193,7 +195,7 @@ function validar(){
 
 function changePage2(validar){
     if(validar){
-        let basicData = [fullName.value, nickName.value, email.value, phone.value, birthDay.value, birthMonth.value, birthYear.value];
+        let basicData = [fullName.value, nickName.value, email.value, phone.value, birthDay.value, birthMonth.value, birthYear.value, age.textContent];
         localStorage.setItem('basicData', JSON.stringify(basicData));
         page2.classList.remove('hidden');
         page1.classList.add('hidden');

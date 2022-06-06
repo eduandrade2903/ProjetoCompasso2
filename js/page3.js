@@ -185,14 +185,33 @@ inputTeamName.addEventListener('keyup', () => {
     validaLinkTeam();
 })
 
+function changePageResults(){
+    page1.classList.add('hidden');
+    page2.classList.add('hidden');
+    page3.classList.add('hidden');
+    pageResult.classList.remove('hidden');
+}
+
+let resultFullName = $('#result-full-name');
+let resultNickname = $('#result-nickname');
+let resultEmail = $('#result-email');
+let resultPhone = $('#result-phone');
+let resultAge = $('#result-age');
+let resultLinkedin = $('#result-linkedin');
+let resultGit = $('#result-github');
+let resultCertificates = $('#result-certificate');
+let resultTeam = $('#result-team');
+let resultInstitution = $('#result-intitution');
+let resultGraduation = $('#result-graduation');
+
+
 buttonFinish.addEventListener('click', (event) => {
     event.preventDefault();
 
         let validains = validaInstition();
         let validalink = validaLinkTeam();
         let validagrad = validaGraduation();
-        let validacert = validaLinkCertificate();
-
+        let validacert = certificados.length;
 
         if( validains && validalink && validagrad && validacert){
             team.push(inputTeamName.value, inputInstitution.value, inputGraduation.value);
@@ -207,12 +226,35 @@ buttonFinish.addEventListener('click', (event) => {
             console.log(arrCertificates);
             var arrTeam = JSON.parse(localStorage.getItem('teamData'));
             console.log(arrTeam);
+
+            resultFullName.textContent = arrBasic[0];
+            resultNickname.textContent = arrBasic[1];
+            resultEmail.textContent = arrBasic[2];
+            resultPhone.textContent = arrBasic[3];
+            resultAge.textContent = arrBasic[7];
+            resultLinkedin.textContent = arrSocial[1];
+            resultGit.textContent = arrSocial[0];
+            resultTeam.textContent = arrTeam[0];
+            resultInstitution.textContent = arrTeam[1];
+            resultGraduation.textContent = arrTeam[2];
+
+            arrCertificates.forEach((certificado) => {
+                let c = document.createElement('span');
+                c.textContent = certificado + '\n';
+                resultCertificates.appendChild(c);
+            }
+
+            );
+
+            changePageResults();
             
         }else {
             console.log('Faltam dados');
         }
-
     
-
 })
+
+
+
+
 

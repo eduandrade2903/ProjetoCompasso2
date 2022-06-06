@@ -260,12 +260,6 @@ h2, p, nav, ul, li, label, #age-result {
   left: 90%;
 }
 
-@media (max-width: 720px) {
-  #basic-page .content #form-basic-page .user-info-container .exception-email {
-    left: 86%;
-  }
-}
-
 #basic-page .content #form-basic-page .user-info-container .exception-phone {
   left: 86%;
 }
@@ -404,7 +398,7 @@ h2, p, nav, ul, li, label, #age-result {
   display: -ms-flexbox;
   display: flex;
   height: 18px;
-  width: 260px;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

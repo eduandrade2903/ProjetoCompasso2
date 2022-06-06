@@ -1,0 +1,25 @@
+@media (max-width: 620px) {
+
+    #basic-page{
+        
+        .content{
+            
+            #form-basic-page{
+
+                .user-info-container{
+        
+                    .horizontal-inputs{
+                        flex-direction: column;
+                    }
+        
+                    i, .exception-email, .exception-phone{
+                        left: 92%;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+}
