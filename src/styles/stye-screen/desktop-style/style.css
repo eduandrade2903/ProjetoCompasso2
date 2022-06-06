@@ -524,7 +524,7 @@ h2, p, nav, ul, li, label, #age-result {
 }
 
 #social-page .content {
-  max-width: 620px;
+  width: 620px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

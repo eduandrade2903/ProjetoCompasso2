@@ -1,0 +1,50 @@
+@media (max-width: 620px) {
+
+    #social-page{
+        
+        .content{
+            
+            #form-social-page{
+
+                .user-social-container{
+        
+                    i, .exception-email, .exception-phone{
+                        left: 92%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+
+    #social-page{
+        
+        .content{
+            
+            header{
+
+                ul{
+                    
+                    li{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            #form-social-page{
+                row-gap: 140px;
+
+                .user-social-container{
+        
+                    i{
+                        left: 88%;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
