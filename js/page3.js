@@ -40,7 +40,6 @@ coracaoPreto.addEventListener('click', () => {
         coracaoPreto.classList.add('hidden');
         coracaoAzul.classList.remove('hidden');        
         certificadoFavorito = true;
-        console.log("favorito");
     }
 });
 
@@ -59,7 +58,6 @@ function validaLinkCertificate(){
     let padraoLink2 = /^[https]+:[//]+[www]+\.linkedin\.+[a-z]+[/]+in[/]+[a-z]+[-]+[a-z]+[-]+[0-9]/gi;
     let padraoLink3 = /^[https]+:[//]+[www]+\.linkedin\.+[a-z]+[/]+in[/]+[a-z]/gi
     let padrao = inputCertificate.value;
-    console.log(padrao);
     if(padraolink.test(padrao)|| padraoLink2.test(padrao)|| padraoLink3.test(padrao) || padrao.value == ''){
       errorCertificate.classList.remove('message-error');
       inputCertificate.classList.remove('input-error');
@@ -123,7 +121,6 @@ function validaLinkTeam(){
     let padraoLink2 = /^[https]+:[//]+[www]+\.linkedin\.+[a-z]+[/]+in[/]+[a-z]+[-]+[a-z]+[-]+[0-9]/gi;
     let padraoLink3 = /^[https]+:[//]+[www]+\.linkedin\.+[a-z]+[/]+in[/]+[a-z]/gi
     let padrao = inputTeamName.value;
-    console.log(padrao);
     if(padraolink.test(padrao)|| padraoLink2.test(padrao)|| padraoLink3.test(padrao)){
       errorTeamName.classList.remove('message-error');
       inputTeamName.classList.remove('input-error');
@@ -213,8 +210,6 @@ buttonFinish.addEventListener('click', (event) => {
         let validagrad = validaGraduation();
         let validacert = certificados.length;
 
-        console.log(validacert);
-
         if( validains && validalink && validagrad && validacert){
             team.push(inputTeamName.value, inputInstitution.value, inputGraduation.value);
             localStorage.setItem('certificatesData', JSON.stringify(certificados));
@@ -253,8 +248,7 @@ buttonFinish.addEventListener('click', (event) => {
             
         }else{
         }
-        if(validacert.length == 0){
-            console.log('Faltam dados');
+        if(!certificados.length){
             errorCertificate.classList.add('message-error');
             inputCertificate.classList.add('input-error');
             ierrorCertificate.classList.add('icon-error');
