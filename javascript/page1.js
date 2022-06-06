@@ -15,15 +15,16 @@ let birthMonth = $('#selection-months');
 let birthYear = $('#selection-years');
 let age = $('#text-age-result');
 let check = $('#check-terms');
-let botao = $('#next-button-page1');
+let botao = $('#basic-next-button');
 let botaoClicked = false;
 let page2Permited = false;
 let page3Permited = false;
 let navSocial = $('#item-social');
 
 // Inícia a página mostrando a page1
-page2.style.display = 'none';
-page3.style.display = 'none';
+
+page2.classList.add('hidden');
+page3.classList.add('hidden');
 
 
 // Validação Nome
@@ -46,6 +47,11 @@ function validaNome(){
 }
 
 fullName.addEventListener('keyup', ()=>{
+    if(email.value && birthDay.value && birthMonth.value && birthYear.value && check.checked){
+        botao.classList.remove('empty-data');
+    }else{
+        botao.classList.add('empty-data');
+    }
     validaNome();
 });
 
@@ -71,7 +77,10 @@ function validadoEmail(){
     }
 } 
 
-email.addEventListener('keyup', ()=>{
+email.addEventListener("keyup", ()=>{
+    if(fullName.value && birthDay.value && birthMonth.value && birthYear.value && check.checked){
+        botao.classList.remove('empty-data');
+    }
     validadoEmail();
 });
 
@@ -83,7 +92,7 @@ let ierrorPhone = $('#ierror-phone');
 function validaNumero(){    
     var padraoTelefone = /^[(]+\d{2}[) ]+\d{4}[-]+\d{4,5}$/gi;
     var telefone = phone.value;
-    if(padraoTelefone.test(telefone) && phone.value){
+    if(padraoTelefone.test(telefone) || telefone ==''){
         phone.classList.remove('input-error');
         errorPhone.classList.remove('message-error');
         ierrorPhone.classList.remove('icon-error');
@@ -129,6 +138,9 @@ function validaBirthDay(){
 }
 
 birthDay.addEventListener("click", ()=>{
+    if(fullName.value && email.value && birthMonth.value && birthYear.value && check.checked){
+        botao.classList.remove('empty-data');
+    }
     validaBirthDay();
 });
 
@@ -143,6 +155,10 @@ function validaBirthMonth(){
 }
 
 birthMonth.addEventListener("click", ()=>{
+    if(fullName.value && birthDay.value && email.value && birthYear.value && check.checked){
+        botao.classList.remove('empty-data');
+    }
+
     validaBirthMonth();
 });
 
@@ -155,8 +171,17 @@ function validaBirthYear(){
 }
 
 birthYear.addEventListener("click", ()=>{
+    if(fullName.value && birthDay.value && birthMonth.value && email.value && check.checked){
+        botao.classList.remove('empty-data');
+    }
     validaBirthYear();
 });
+
+check.addEventListener('click', () => {
+    if(fullName.value && birthDay.value && birthMonth.value && email.value && birthYear.value){
+        botao.classList.remove('empty-data');
+    }
+})
 
 // Valida os inputs. Usado para mudança de página e salvar dados no localstorage
 
@@ -170,12 +195,11 @@ function changePage2(validar){
     if(validar){
         let basicData = [fullName.value, nickName.value, email.value, phone.value, birthDay.value, birthMonth.value, birthYear.value];
         localStorage.setItem('basicData', JSON.stringify(basicData));
-        page2.style.display = 'block';
-        page1.style.display = 'none';
-        page3.style.display = 'none';
+        page2.classList.remove('hidden');
+        page1.classList.add('hidden');
+        page3.classList.add('hidden');
         page2Permited = true;
         var arr = JSON.parse(localStorage.getItem('basicData'));
-        console.log(typeof(arr));
         console.log(arr);
     } else {
         page2Permited = false;
@@ -223,7 +247,6 @@ birthDay.addEventListener('click', function(event){
 });
 
 // Função para mudar para page2, condicionada a validação
-
 
 // Salva os dados dos inputs e executa a mudança de página
 botao.addEventListener('click', function(event){

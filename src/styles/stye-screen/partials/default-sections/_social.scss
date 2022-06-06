@@ -151,7 +151,7 @@
                     flex: 1 1 100%;
                     justify-content: end;
 
-                    #next-button{
+                    .social-next-button{
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
@@ -174,6 +174,16 @@
                         i{
                             margin-top: 3px;
                             margin-right: 5px;
+                        }
+                    }
+
+                    .empty-data{
+                        background-color: #ffffff;
+                        color: $primary-color;
+                        border: 1px solid $primary-color;
+
+                        &:hover{
+                            background-color: #b8d0ff;
                         }
                     }
                 }

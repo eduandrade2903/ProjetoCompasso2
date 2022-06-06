@@ -1,5 +1,5 @@
 let navBasic = $('#item-basic');
-let nextButtonPage2 = $('#next-button-page2');
+let nextButtonPage2 = $('#social-next-button');
 let inputLinkedln = $('#input-linkedin');
 let ierrorLinkedin = $('#ierror-linkedin');
 let errorLinkedin = $('#error-linkedin');
@@ -17,9 +17,9 @@ ierrorGit.classList.remove('icon-error');
 errorGit.classList.remove('message-error');
 
 function changePage1(){
-  page2.style.display = 'none';
-  page1.style.display = 'block';
-  page3.style.display = 'none';
+  page1.classList.remove('hidden');
+  page2.classList.add('hidden');
+  page3.classList.add('hidden');
 }
 
 navBasic.addEventListener('click',function(){
@@ -28,9 +28,9 @@ navBasic.addEventListener('click',function(){
 
 function changePage3(valida){
     if(valida){
-      page2.style.display = 'none';
-      page1.style.display = 'none';
-      page3.style.display = 'block';
+      page1.classList.add('hidden');
+      page2.classList.add('hidden');
+      page3.classList.remove('hidden');
     }
 
 }
@@ -38,6 +38,8 @@ function changePage3(valida){
 nextButtonPage2.addEventListener('click',function(event){
   event.preventDefault();
   changePage3(validaPage2());
+  let social = [inputGit.value, inputLinkedln.value];
+  localStorage.setItem('socialData', JSON.stringify(social));
 })
 
 function validaGit(){
@@ -57,6 +59,13 @@ function validaGit(){
 }
 
 inputGit.addEventListener('keyup', ()=>{
+  if(validaGit()){
+    nextButtonPage2.classList.remove('empty-data');
+  } else {
+    nextButtonPage2.classList.add('empty-data');
+  }
+
+
   validaGit();
 })
 
@@ -66,8 +75,8 @@ function validaLink(){
     let padraoLink3 = /^[https]+:[//]+[www]+\.linkedin\.+[a-z]+[/]+in[/]+[a-z]/gi
     let padrao = inputLinkedln.value;
     console.log(padrao);
-    if(padraolink.test(padrao)|| padraoLink2.test(padrao)|| padraoLink3.test(padrao)){
-      console.log('assou')
+    if(padraolink.test(padrao)|| padraoLink2.test(padrao)|| padraoLink3.test(padrao) || padrao == ''){
+      console.log('passou')
       inputLinkedln.classList.remove('input-error');
       ierrorLinkedin.classList.remove('icon-error');
       errorLinkedin.classList.remove('message-error');
