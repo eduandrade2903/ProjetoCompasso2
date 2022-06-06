@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media (max-width: 620px) {
+  #basic-page .content #form-basic-page .user-info-container .horizontal-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #basic-page .content #form-basic-page .user-info-container i, #basic-page .content #form-basic-page .user-info-container .exception-email, #basic-page .content #form-basic-page .user-info-container .exception-phone {
+    left: 92%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -1,4 +1,4 @@
-@import '../../../abstract/global';
+@import '../abstract/global';
 
 #results-page{
     width: 100vw;
@@ -8,7 +8,9 @@
     padding: 45px;
 
     .content{
-        min-width: 500px;
+        min-width: 320px;
+        width: 520px;
+        max-width: 620px;
         display: flex;
         flex-direction: column;
         row-gap: 20px;
@@ -19,7 +21,7 @@
         .title
         {
             font-family: $title-font;
-            border-bottom: 2px solid $primary-color;
+            border-bottom: 3px solid $primary-color;
             padding-bottom: 10px;
         }
 
@@ -46,9 +48,9 @@
                     margin-bottom: 4px;
                     font-size: 14px;
                     padding: 10px;
-                    border: 1px solid #767676;
-                    border-radius: 10px;
-                    background-color: #f0f0f0;
+                    border: 1px solid $primary-color;
+                    border-radius: 5px;
+                    background-color: #eaf3ff;
                 }
             }
 
@@ -111,9 +113,9 @@
                     margin-bottom: 4px;
                     font-size: 14px;
                     padding: 10px;
-                    border: 1px solid #767676;
-                    border-radius: 10px;
-                    background-color: #f0f0f0;
+                    border: 1px solid $primary-color;
+                    border-radius: 5px;
+                    background-color: #eaf3ff;
                 }
             }
 
@@ -159,18 +161,21 @@
                     justify-content: space-between;
                     padding: 10px;
                     font-size: 1.6rem;
-                    background-color: $primary-color;
-                    border: none;
+                    background-color: #ffffff;
+                    border: 1px solid $primary-color;
                     border-radius: 4px;
-                    color: #ffffff;
+                    color: $primary-color;
                     line-height: 18px;
                     width: 120px;
                     height: 40px;
                     transition: .2s ease-in-out;
 
                     &:hover{
-                        background-color: #053db7;
-                        transition: .2s ease-in-out;
+                        background-color: $primary-color;
+                        color: #ffffff;
+                        transition: .3s ease-in-out;
+                        
+
                     }
 
                     i{

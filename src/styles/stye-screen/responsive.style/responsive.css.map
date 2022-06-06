@@ -1,8 +1,11 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,MAAM,EAAE,SAAS,EAAE,KAAK;EAEpB,AAQgB,WARL,CAEP,QAAQ,CAEJ,gBAAgB,CAEZ,oBAAoB,CAEhB,kBAAkB,CAAA;IACd,cAAc,EAAE,MAAM;GACzB;EAVjB,AAYgB,WAZL,CAEP,QAAQ,CAEJ,gBAAgB,CAEZ,oBAAoB,CAMhB,CAAC,EAZjB,WAAW,CAEP,QAAQ,CAEJ,gBAAgB,CAEZ,oBAAoB,CAMb,gBAAgB,EAZnC,WAAW,CAEP,QAAQ,CAEJ,gBAAgB,CAEZ,oBAAoB,CAMK,gBAAgB,CAAA;IACjC,IAAI,EAAE,GAAG;GACZ",
     "sources": [
-        "responsive.scss"
+        "responsive.scss",
+        "../partials/responsive-sections/_resp-basic.scss",
+        "../partials/responsive-sections/_resp-social.scss",
+        "../partials/responsive-sections/_resp-certificates.scss"
     ],
     "names": [],
     "file": "responsive.css"

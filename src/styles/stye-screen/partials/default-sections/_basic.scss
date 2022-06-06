@@ -158,10 +158,6 @@
 
                 .exception-email{
                     left: 90%;
-
-                    @media (max-width: 720px) {
-                        left: 86%
-                    }
                 }
 
                 .exception-phone{
@@ -272,7 +268,7 @@
                 .terms-container{
                     display: flex;
                     height: 18px;
-                    width: 260px;
+                    width: 100%;
                     flex-direction: row;
                     align-items: center;
                     margin-bottom: 52px;
