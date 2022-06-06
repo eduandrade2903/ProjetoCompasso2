@@ -12,6 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles/abstract/reset.css">
+    <link rel="stylesheet" href="src/styles/page-results/results.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
 
@@ -26,7 +32,7 @@
                 <nav class="nav-bar" id="nav-bar-page1">
                     <ul>
                         <li class="item">Basic</li>
-                        <li class="item">Social</li>
+                        <li class="item" id="item-social">Social</li>
                         <li class="item">Certificates</li>
                     </ul>
                 </nav>
@@ -38,8 +44,8 @@
                             <label for="input-name">Full name *</label>
                             <input class="" type="text" name="full-name" id="input-name" placeholder="Foo Bar">
             
-                            <i class=""><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="" id="error-name">teste de mensagem de erro</span>
+                            <i class="" id="ierror-name"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="" id="error-name">Please, enter a valid full name.</span>
                         </div>
                         <div class="nickname-container">
                             <label for="input-nickname">Nickname</label>
@@ -53,15 +59,15 @@
                                 <label for="input-email">Email *</label>
                                 <input class="" type="email" name="email" id="input-email" placeholder="foo@bar.com" class="denial">
 
-                                <i class=" exception-email"><img src="src/icons/error-icon.svg" alt=""></i>
-                                <span class="" id="email-error">teste de mensagem de erro</span>
+                                <i class="" id="ierror-email"><img src="src/icons/error-icon.svg" alt=""></i>
+                                <span class="" id="error-email">Please, enter a valid email.</span>
                             </div>
                             <div class="phone-container">
                                 <label for="input-tel">Phone</label>
                                 <input class=""type="tel" name="telephone" id="input-tel" placeholder="(83) 00000-0000" class="denial">
 
-                                <i class=" exception-phone"><img src="src/icons/error-icon.svg" alt=""></i>
-                                <span class="" id="phone-error">teste de mensagem de erro</span>
+                                <i class="exception-phone" id="ierror-phone"><img src="src/icons/error-icon.svg" alt=""></i>
+                                <span class="" id="error-phone">Please, enter a valid phone number.</span>
                             </div>
                         </div>
                     </div>
@@ -102,8 +108,9 @@
                             </div>
                         </div>
 
+
                         <div class="terms-container">
-                            <input type="checkbox" name="terms" id="check-terms">
+                            <input type="checkbox" name="terms" id="check-terms" value="true">
 
                             <label for="check-terms">
                                 I accept the terms and privacy
@@ -138,9 +145,9 @@
                 </div>
                 <nav class="nav-bar" id="nav-bar-page2">
                     <ul>
-                        <li class="item">Basic</li>
+                        <li class="item" id="item-basic">Basic</li>
                         <li class="item">Social</li>
-                        <li class="item">Certificates</li>
+                        <li class="item" id="item-certificates">Certificates</li>
                     </ul>
                 </nav>
             </header>
@@ -150,10 +157,10 @@
                     <div class="user-social-container">
                         <div class="linkedin-container">
                             <label for="input-linkedin">LinkedIn</label>
-                            <input type="text" name="linkedin" id="input-name" class="" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                            <input type="text" name="linkedin" id="input-linkedin" class="input-error" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
                             
-                            <i class=""><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="" id="error-linkedin">teste de mensagem de erro</span>
+                            <i class="" id="ierror-linkedin"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="message-error" id="error-linkedin">Please, enter a valid LinkedIn link.</span>
                         </div>
 
 
@@ -161,8 +168,8 @@
                             <label for="input-github">Github*</label>
                             <input type="text" name="github" id="input-github" class="" placeholder="https://github.com/foobar">
 
-                            <i class=""><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="" id="error-github">teste de mensagem de erro</span>
+                            <i class="" id="ierror-git"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="" id="error-github">Please, enter a valid GitHub link.</span>
                         </div>
                     </div>
 
@@ -194,7 +201,7 @@
                 <nav class="nav-bar" id="nav-bar-page3">
                     <ul>
                         <li class="item">Basic</li>
-                        <li class="item">Social</li>
+                        <li class="item" id="item-social-page3">Social</li>
                         <li class="item">Certificates</li>
                     </ul>
                 </nav>
@@ -208,7 +215,7 @@
                                 <input class="" type="text" name="certificate" id="input-certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
 
                                 <i class="" id="ierror-certificate"><img src="src/icons/error-icon.svg" alt=""></i>
-                                <span class="" id="error-certificate">teste de mensagem de erro</span>
+                                <span class="" id="error-certificate">Please, enter a valid certificate.</span>
 
                                 <i class="fa-regular fa-heart inactive-heart-icon not-absolute" id="inactive-heart-icon"></i>
                                 <i class="fa-regular fa-heart active-heart-icon not-absolute hidden" id="active-heart-icon"></i>
@@ -235,24 +242,24 @@
                             <label for="input-team-name">Team Name *</label>
                             <input class="" type="text" name="team-name" id="input-team-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
         
-                            <i class=""><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="" id="error-team-name">teste de mensagem de erro</span>
+                            <i class="" id="ierror-team-name"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="" id="error-team-name">Please, enter a valid team name.</span>
                         </div>
 
                         <div class="institution-container">
                             <label for="input-institution">Institution *</label>
                             <input class="" type="text" name="institution" id="input-institution" placeholder="Universidade Federal da Paraíba">
 
-                            <i class=""><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="" id="error-institution">teste de mensagem de erro</span>
+                            <i class="" id="ierror-institution"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="" id="error-institution">Please, enter an institution.</span>
                         </div>
 
                         <div class="graduation-container">
                             <label for="input-graduation">Graduation *</label>
                             <input class="" type="text" name="graduation" id="input-graduation" placeholder="Ciências da Computação">
 
-                            <i class=""><img src="src/icons/error-icon.svg" alt=""></i>
-                            <span class="" id="error-graduation">teste de mensagem de erro</span>
+                            <i class="" id="ierror-graduation"><img src="src/icons/error-icon.svg" alt=""></i>
+                            <span class="" id="error-graduation">Please, enter a graduation.</span>
                         </div>
                     </div>
 
@@ -269,61 +276,90 @@
         </div>
     </section>
 
+    <section class="page" id="results-page">
+        <div class="content">
+            <h1 class="title">Your Results</h1>
+            <div class="results-container-basic" id="results-container-basic">
+                <div class="results">
+                    <h3 class="subtitle">Full Name</h3>
+                    <span class="text-results" id="result-full-name"></span>
+                </div>
+
+                <div class="results">
+                    <h3 class="subtitle">Nickname</h3>
+                    <span class="text-results" id="result-nickname"></span>
+                </div>
+
+                <div class="results">
+                    <h3 class="subtitle">Email</h3>
+                    <span class="text-results" id="result-email"></span>
+                </div>
+
+                <div class="results">
+                    <h3 class="subtitle">Phone</h3>
+                    <span class="text-results" id="result-phone"></span>
+                </div>
+
+                <div class="results">
+                    <h3 class="subtitle">Age</h3>
+                    <span class="text-results" id="result-age">2</span>
+                </div>
+
+                <div class="results">
+                    <h3 class="subtitle">LinkedIn</h3>
+                    <span class="text-results" id="result-linkedin"></span>
+                </div>
+
+                <div class="results">
+                    <h3 class="subtitle">Github</h3>
+                    <span class="text-results" id="result-github">a</span>
+                </div>
+
+                <div class="buttons-basic">
+                    <button id="results-next-button">                     
+                        <span>Next</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
 
 
 
+            <div class="results-container-certificates hidden" id="results-container-certificates">
+                <div class="results">
+                    <h3 class="subtitle">Certificate</h3>
+                    <span class="text-results" id="result-certificate"></span>
+                </div>
 
-    
+                <div class="results">
+                    <h3 class="subtitle">Team Name</h3>
+                    <span class="text-results" id="result-team"></span>
+                </div>
 
-    <!-- Script local -->
+                <div class="results">
+                    <h3 class="subtitle">Institution</h3>
+                    <span class="text-results" id="result-intitution"></span>
+                </div>
 
-    <script>
-        var page1 = false;
-        var page2 = true;
-        var page3 = true;
+                <div class="results">
+                    <h3 class="subtitle">Graduation</h3>
+                    <span class="text-results" id="result-graduation"></span>
+                </div>
 
-        if (page1 == true){
-            let sectionBasic = document.querySelector('#basic-page');
-            sectionBasic.classList.add('hidden')
-        }
+                <div class="buttons-certificate">
+                    <button id="results-back-button">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <span>Back</span>
+                    </button>
+                    <button id="results-new-user-button">
+                        <span>New User</span>
+                        <i class="fa-solid fa-user-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        if (page2 == true){
-            let sectionSocial = document.querySelector('#social-page');
-            sectionSocial.classList.add('hidden')
-        }
-
-        if (page3 == true){
-            let sectionCertificates = document.querySelector('#certificates-page');
-            sectionCertificates.classList.add('hidden')
-        }
-
-        (function(){
-            let start_year = 2010;
-            let html ='';
-            for (let i = start_year; i > start_year - 61; i--) {
-            html += '<option value="'+i+'">'+i+'</option>';
-            }
-            document.getElementById("selection-years").innerHTML = html;
-        })();
-        (function(){
-            let start_month = 1;
-            let html ='';
-            for (let i = start_month; i < start_month + 12; i++) {
-            html += '<option value="'+i+'">'+i+'</option>';
-            }
-            console.log(html);
-            document.getElementById("selection-months").innerHTML = html;
-        })();
-        (function(){
-            let start_day = 1;
-            let html ='';
-            for (let i = start_day; i < start_day + 31; i++) {
-            html += '<option value="'+i+'">'+i+'</option>';
-            }
-            console.log(html);
-            document.getElementById("selection-days").innerHTML = html;
-        })();
-    </script>
     
     <!-- Frameworks -->
 
@@ -332,9 +368,13 @@
 
     <!-- Arquivos JS do projeto -->
 
-    <script src="javascript/basic-section/"></script>
-    <script src="javascript/social-section/"></script>
-    <script src="javascript/certificates-section/"></script>
+    <script src="js/page1.js"></script>
+    <script src="js/page2.js"></script>
+    <script src="js/page3.js"></script>
+    <script src="js/pageResults.js"></script>
+    <script src="https://kit.fontawesome.com/5d2396c788.js" crossorigin="anonymous"></script> <!--fontAwesome-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+
 
 </body>
 </html>
